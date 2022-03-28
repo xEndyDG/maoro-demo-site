@@ -17,9 +17,9 @@ if (isset($_GET["page"])) { //als de GET 'page' niet leeg is
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
-<!--    link naar stylesheet-->
+    <!--    link naar stylesheet-->
     <link rel="stylesheet" href="css/style.css">
-<!--    link naar javascript-->
+    <!--    link naar javascript-->
 
 </head>
 <body>
@@ -27,5 +27,6 @@ if (isset($_GET["page"])) { //als de GET 'page' niet leeg is
     <?php include "includes/navigationinc.php"; ?>
     <?php include "includes/$page.inc.php"; ?>
 </div>
+<?php include "includes/footer.inc.php"; ?>
 </body>
 </html>

@@ -34,17 +34,100 @@
     justify-content: space-around;
     flex-wrap: wrap; }
 
-.about .about_container {
-  background: greenyellow;
+.about .about_container .BgAnimation {
+  background: linear-gradient(231deg, #246655, #9b4b4a);
+  background-size: 400% 400%;
+  -webkit-animation: BgAnimation 20s ease infinite;
+  -moz-animation: BgAnimation 20s ease infinite;
+  animation: BgAnimation 20s ease infinite;
   text-align: center; }
-  .about .about_container .about__main {
-    justify-content: center;
+
+@-webkit-keyframes BgAnimation {
+  0% {
+    background-position: 90% 0%; }
+  50% {
+    background-position: 11% 100%; }
+  100% {
+    background-position: 90% 0%; } }
+
+@-moz-keyframes BgAnimation {
+  0% {
+    background-position: 90% 0%; }
+  50% {
+    background-position: 11% 100%; }
+  100% {
+    background-position: 90% 0%; } }
+
+@keyframes BgAnimation {
+  0% {
+    background-position: 90% 0%; }
+  50% {
+    background-position: 11% 100%; }
+  100% {
+    background-position: 90% 0%; } }
+  .about .about_container .BgAnimation .about__main {
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
     padding: 1rem; }
-    .about .about_container .about__main .about_me {
+    .about .about_container .BgAnimation .about__main .about_me {
+      background: red;
+      position: relative;
+      height: 100%;
       width: 100%;
-      padding: 2rem; }
-    .about .about_container .about__main .about_me_art {
-      width: 100%;
-      padding: 2rem; }
+      padding: 2rem;
+      background: linear-gradient(356deg, #246655, #b92a4f);
+      background-size: 400% 400%;
+      -webkit-animation: about__me 5s ease infinite;
+      -moz-animation: about__me 5s ease infinite;
+      animation: about__me 5s ease infinite; }
+
+@-webkit-keyframes about__me {
+  0% {
+    background-position: 77% 0%; }
+  50% {
+    background-position: 24% 100%; }
+  100% {
+    background-position: 77% 0%; } }
+
+@-moz-keyframes about__me {
+  0% {
+    background-position: 77% 0%; }
+  50% {
+    background-position: 24% 100%; }
+  100% {
+    background-position: 77% 0%; } }
+
+@keyframes about__me {
+  0% {
+    background-position: 77% 0%; }
+  50% {
+    background-position: 24% 100%; }
+  100% {
+    background-position: 77% 0%; } }
+  .about .about_container .BgAnimation .about_me_art {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    object-fit: cover;
+    justify-content: center; }
+    .about .about_container .BgAnimation .about_me_art .hoverhere {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.75s; }
+    .about .about_container .BgAnimation .about_me_art .img:hover {
+      opacity: 0.75; }
+      .about .about_container .BgAnimation .about_me_art .img:hover .hoverhere {
+        opacity: 1;
+        background: red; }
+
+.footer {
+  background: yellow;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }

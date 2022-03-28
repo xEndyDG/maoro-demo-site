@@ -64,21 +64,156 @@
 
 .about {
   .about_container {
-    background: greenyellow;
-    text-align: center;
-    .about__main {
-      justify-content: center;
-      display: flex;
-      flex-direction: row;
-      padding: 1rem;
-      .about_me {
-        width: 100%;
-        padding: 2rem;
+    .BgAnimation {
+      //bg
+      background: linear-gradient(231deg, #246655, #9b4b4a);
+      background-size: 400% 400%;
+
+      -webkit-animation: BgAnimation 20s ease infinite;
+      -moz-animation: BgAnimation 20s ease infinite;
+      animation: BgAnimation 20s ease infinite;
+
+      @-webkit-keyframes BgAnimation {
+        0% {
+          background-position: 90% 0%
+        }
+        50% {
+          background-position: 11% 100%
+        }
+        100% {
+          background-position: 90% 0%
+        }
       }
+      @-moz-keyframes BgAnimation {
+        0% {
+          background-position: 90% 0%
+        }
+        50% {
+          background-position: 11% 100%
+        }
+        100% {
+          background-position: 90% 0%
+        }
+      }
+      @keyframes BgAnimation {
+        0% {
+          background-position: 90% 0%
+        }
+        50% {
+          background-position: 11% 100%
+        }
+        100% {
+          background-position: 90% 0%
+        }
+      }
+      text-align: center;
+
+      .about__main {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+
+        .about_me {
+          background: red;
+          position: relative;
+          height: 100%;
+          width: 100%;
+          padding: 2rem;
+
+
+          //bg
+          background: linear-gradient(356deg, #246655, #b92a4f);
+          background-size: 400% 400%;
+
+          -webkit-animation: about__me 5s ease infinite;
+          -moz-animation: about__me 5s ease infinite;
+          animation: about__me 5s ease infinite;
+
+
+          @-webkit-keyframes about__me {
+            0% {
+              background-position: 77% 0%
+            }
+            50% {
+              background-position: 24% 100%
+            }
+            100% {
+              background-position: 77% 0%
+            }
+          }
+          @-moz-keyframes about__me {
+            0% {
+              background-position: 77% 0%
+            }
+            50% {
+              background-position: 24% 100%
+            }
+            100% {
+              background-position: 77% 0%
+            }
+          }
+          @keyframes about__me {
+            0% {
+              background-position: 77% 0%
+            }
+            50% {
+              background-position: 24% 100%
+            }
+            100% {
+              background-position: 77% 0%
+            }
+          }
+        }
+
+
+        //background: rgb(2,0,36);
+        //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,8,112,1) 40%, rgba(9,9,121,1) 77%, rgba(0,212,255,1) 100%);
+      }
+
       .about_me_art {
         width: 100%;
-        padding: 2rem;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        object-fit: cover;
+        justify-content: center;
+
+
+        .hoverhere { //text position
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+          transition: opacity 0.75s;
+        }
+
+        .img:hover {
+          opacity: 0.75;
+          .hoverhere {  //komt niet meer naar foreground, je ziet de text niet
+            opacity: 1;
+            background: red;
+
+          }
+        }
+
+
+        //idee, hover here en dan opent een box zich waar de img met text schuin uit komen met een fade in
+
       }
     }
+
+    //bg animation
   }
+
+  //bg container
+}
+
+.footer {
+  background: yellow;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
