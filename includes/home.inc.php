@@ -4,4 +4,5 @@
 <p>To do:</p>
 <ul>
     <li>Home</li>
+    <li>About me</li>
 </ul>
