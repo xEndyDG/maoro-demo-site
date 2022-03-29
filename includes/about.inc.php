@@ -3,11 +3,6 @@
 <section class="about">
     <div class="about_container">
         <div class="about__main">
-            <div class="about__me__title">
-                <h1>About page</h1>
-                <p><i>Een temporary portfolio voor mezelf</i></p>
-            </div>
-
             <div class="about__me__info">
                 foto: <img class="img" src="images/pfp.jpg" style="max-height: 150px; max-width: 150px">
                 <h2>persoonlijke informatie:</h2>
@@ -33,6 +28,10 @@
                     <li>Management</li>
                     <li>Flexiebel</li>
                 </ul>
+            </div>
+            <div class="about__me__title">
+                <h1>About page</h1>
+                <p><i>Een temporary portfolio voor mezelf</i></p>
             </div>
             <div class="about__me__main">
                 <h2>Projecten</h2>

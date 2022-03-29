@@ -1,8 +1,22 @@
 html, body {
   height: 100%;
   margin: 0;
-  padding: 0;
-  overflow: hidden; }
+  padding: 0; }
+
+.container {
+  display: flex;
+  flex-direction: column; }
+  .container .content {
+    background: red;
+    flex: 1 0 auto; }
+  .container .footer {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    width: 100%;
+    bottom: 0; }
 
 .navigation {
   border: 2px solid red; }
@@ -41,23 +55,19 @@ html, body {
 .about .about_container .about__main {
   margin-top: 1.5rem;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column; }
-  .about .about_container .about__main .about__me__title {
-    background: green; }
+  flex-wrap: wrap;
+  flex-direction: row; }
   .about .about_container .about__main .about__me__info {
+    width: 15%;
     background: blue; }
   .about .about_container .about__main .about__me__skills {
+    order: 1;
+    width: 15%;
     background: purple; }
+  .about .about_container .about__main .about__me__title {
+    width: 85%;
+    background: green; }
   .about .about_container .about__main .about__me__main {
+    order: 2;
+    width: 85%;
     background: gold; }
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #07252d;
-  border: 2px solid red;
-  position: absolute;
-  width: 100%;
-  bottom: 0; }

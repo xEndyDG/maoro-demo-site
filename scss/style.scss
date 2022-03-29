@@ -5,9 +5,26 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
+.container {
+  display: flex;
+  flex-direction: column;
 
+  .content {
+    background: red;  //main body bg basically
+    flex: 1 0 auto;
+  }
+  .footer {
+    display: flex;
+    flex-shrink: 0;
+
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    width: 100%;
+    bottom: 0;
+  }
+}
 
 .navigation {
   border: 2px solid red;
@@ -70,24 +87,30 @@ html, body {
 
 .about {
   .about_container {
-    .about__main {
+    .about__main {  //waar alle content in staat
       margin-top: 1.5rem;
+
+
       display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
 
-      justify-content: space-between;
-      flex-direction: column;
-
-
-      .about__me__title {
-        background: green;
-      }
       .about__me__info {
+        width: 15%;
         background: blue;
       }
       .about__me__skills {
+        order: 1;
+        width: 15%;
         background: purple;
       }
+      .about__me__title {
+        width: 85%;
+        background: green;
+      }
       .about__me__main {
+        order: 2;
+        width: 85%;
         background: gold;
       }
 
@@ -97,14 +120,3 @@ html, body {
 }
 
 
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #07252d;
-  border: 2px solid red;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  //overflow: hidden;
-}

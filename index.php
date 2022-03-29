@@ -24,9 +24,15 @@ if (isset($_GET["page"])) { //als de GET 'page' niet leeg is
 
 
 <body>
-<?php include "includes/navigationinc.php"; ?>
-    <?php include "includes/$page.inc.php"; ?>
-    <?php include "includes/footer.inc.php"; ?>
+<div class="container">
+    <div class="content">
+        <?php include "includes/navigationinc.php"; ?>
+        <?php include "includes/$page.inc.php"; ?>
+    </div>
+    <div class="footer">
+        <?php include "includes/footer.inc.php"; ?>
+    </div>
+</div>
 </body>
 </html>
 
