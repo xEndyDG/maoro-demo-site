@@ -1,19 +1,29 @@
 //run 'npm run scss' && press ctr + s voor npm --watch
 //idee, hover here en dan opent een box zich waar de img met text schuin uit komen met een fade in
 
+html, * {
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;
 
   .content {
-    background: red;  //main body bg basically
+    background: red; //main body bg basically
     flex: 1 0 auto;
   }
+
   .footer {
     display: flex;
     flex-shrink: 0;
@@ -87,36 +97,99 @@ html, body {
 
 .about {
   .about_container {
-    .about__main {  //waar alle content in staat
+    .about__main { //waar alle content in staat
       margin-top: 1.5rem;
-
 
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      //font-family: "Jazz LET";
 
-      .about__me__info {
-        width: 15%;
-        background: blue;
-      }
-      .about__me__skills {
-        order: 1;
-        width: 15%;
-        background: purple;
-      }
-      .about__me__title {
-        width: 85%;
-        background: green;
-      }
-      .about__me__main {
-        order: 2;
-        width: 85%;
-        background: gold;
+      aside.sidebar {
+        width: 300px;
+
+        .persoonlijke_informatie {
+          background: blue;
+          padding: 1rem;
+          height: 50%;
+
+          .persoonlijke_informatie_image {
+            text-align: center;
+
+            img {
+              max-height: 200px;
+              max-width: 200px
+            }
+          }
+
+          .informatie__content {
+            float: left;
+            text-align: left;
+
+            .informatie-content-item {
+              padding: 5px 5px 5px 0;
+
+              a {
+                font-size: 26px;
+              }
+            }
+          }
+        }
+
+        .competenties {
+          background: purple;
+          padding: 1rem;
+          height: 50%;
+        }
       }
 
+      .main__content {
+        width: calc(100% - 300px);
 
+        .title {
+          justify-content: center;
+          text-align: center;
+          background: green;
+          padding: 1rem;
+
+          h1 {
+            font-size: 56px;
+          }
+        }
+
+        .main-content-box {
+          background: gold;
+          padding: 1rem;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+
+          .main-item-2 {
+            width: 47.5%;
+          }
+
+          .main-item-3 {
+            width: 47.5%;
+          }
+
+          .main-item-4 {
+            flex-basis: 100%;
+            flex-wrap: wrap;
+
+            .main-title {
+              text-align: center;
+              flex-basis: 100%;
+            }
+
+            justify-content: space-evenly;
+            display: flex;
+          }
+        }
+      }
     }
   }
 }
+
+
 
 
