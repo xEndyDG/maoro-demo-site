@@ -1,10 +1,30 @@
 //run 'npm run scss' && press ctr + s voor npm --watch
+//idee, hover here en dan opent een box zich waar de img met text schuin uit komen met een fade in
+
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .navigation {
-  //display: flex;
-  //justify-content: center;
-  //flex-wrap: wrap;
-  //flex-direction: row;  //default
+  border: 2px solid red;
+
   ul {
     list-style-type: none;
     margin: 0;
@@ -36,7 +56,6 @@
 
 .home {
   .home__container {
-
     //colors n shit
     background: greenyellow;
     border: 2px solid red;
@@ -64,156 +83,138 @@
 
 .about {
   .about_container {
-    .BgAnimation {
-      //bg
-      background: linear-gradient(231deg, #246655, #9b4b4a);
-      background-size: 400% 400%;
+    .about__main {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: row;
 
-      -webkit-animation: BgAnimation 20s ease infinite;
-      -moz-animation: BgAnimation 20s ease infinite;
-      animation: BgAnimation 20s ease infinite;
+      .about_me {
+        background: red;
+        position: relative;
+        height: 100%;
+        width: 100%;
 
-      @-webkit-keyframes BgAnimation {
-        0% {
-          background-position: 90% 0%
-        }
-        50% {
-          background-position: 11% 100%
-        }
-        100% {
-          background-position: 90% 0%
-        }
-      }
-      @-moz-keyframes BgAnimation {
-        0% {
-          background-position: 90% 0%
-        }
-        50% {
-          background-position: 11% 100%
-        }
-        100% {
-          background-position: 90% 0%
-        }
-      }
-      @keyframes BgAnimation {
-        0% {
-          background-position: 90% 0%
-        }
-        50% {
-          background-position: 11% 100%
-        }
-        100% {
-          background-position: 90% 0%
-        }
-      }
-      text-align: center;
+        //bg
+        background: linear-gradient(356deg, #246655, #b92a4f);
+        background-size: 400% 400%;
 
-      .about__main {
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-        padding: 1rem;
-
-        .about_me {
-          background: red;
-          position: relative;
-          height: 100%;
-          width: 100%;
-          padding: 2rem;
+        -webkit-animation: about__me 5s ease infinite;
+        -moz-animation: about__me 5s ease infinite;
+        animation: about__me 5s ease infinite;
 
 
-          //bg
-          background: linear-gradient(356deg, #246655, #b92a4f);
-          background-size: 400% 400%;
-
-          -webkit-animation: about__me 5s ease infinite;
-          -moz-animation: about__me 5s ease infinite;
-          animation: about__me 5s ease infinite;
-
-
-          @-webkit-keyframes about__me {
-            0% {
-              background-position: 77% 0%
-            }
-            50% {
-              background-position: 24% 100%
-            }
-            100% {
-              background-position: 77% 0%
-            }
+        @-webkit-keyframes about__me {
+          0% {
+            background-position: 77% 0%
           }
-          @-moz-keyframes about__me {
-            0% {
-              background-position: 77% 0%
-            }
-            50% {
-              background-position: 24% 100%
-            }
-            100% {
-              background-position: 77% 0%
-            }
+          50% {
+            background-position: 24% 100%
           }
-          @keyframes about__me {
-            0% {
-              background-position: 77% 0%
-            }
-            50% {
-              background-position: 24% 100%
-            }
-            100% {
-              background-position: 77% 0%
-            }
+          100% {
+            background-position: 77% 0%
           }
         }
-
-
-        //background: rgb(2,0,36);
-        //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,8,112,1) 40%, rgba(9,9,121,1) 77%, rgba(0,212,255,1) 100%);
+        @-moz-keyframes about__me {
+          0% {
+            background-position: 77% 0%
+          }
+          50% {
+            background-position: 24% 100%
+          }
+          100% {
+            background-position: 77% 0%
+          }
+        }
+        @keyframes about__me {
+          0% {
+            background-position: 77% 0%
+          }
+          50% {
+            background-position: 24% 100%
+          }
+          100% {
+            background-position: 77% 0%
+          }
+        }
       }
 
       .about_me_art {
-        width: 100%;
-        height: 100%;
         position: relative;
         text-align: center;
         object-fit: cover;
         justify-content: center;
 
 
-        .hoverhere { //text position
-          position: absolute;
-          top: 20%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          opacity: 0;
-          transition: opacity 0.75s;
+        .img {
+          z-index: 0;
         }
 
-        .img:hover {
-          opacity: 0.75;
-          .hoverhere {  //komt niet meer naar foreground, je ziet de text niet
-            opacity: 1;
-            background: red;
+        .img__text {
+          opacity: 0;
+          color: white;
+          -webkit-transition: all 300ms ease-in-out;
+          -o-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1; //laat het over de blur zien
+        }
+      }
 
+      .about_me_art:hover {
+        .img {
+          -webkit-transition: all 300ms ease-in-out;
+          -o-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+          filter: blur(1px);
+        }
+
+        .img__text {
+          -webkit-animation: slide-in-bck-bottom 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-in-bck-bottom 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+          @-webkit-keyframes slide-in-bck-bottom {
+            0% {
+              -webkit-transform: translateZ(700px) translateY(300px);
+              transform: translateZ(700px) translateY(300px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+              opacity: 1;
+            }
+          }
+          @keyframes slide-in-bck-bottom {
+            0% {
+              -webkit-transform: translateZ(700px) translateY(300px);
+              transform: translateZ(700px) translateY(300px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+              opacity: 1;
+            }
           }
         }
-
-
-        //idee, hover here en dan opent een box zich waar de img met text schuin uit komen met een fade in
-
       }
     }
-
-    //bg animation
   }
-
-  //bg container
 }
 
+
 .footer {
-  background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #07252d;
+  border: 2px solid red;
+  position: absolute;
   width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  bottom: 0;
+  overflow: hidden;
 }

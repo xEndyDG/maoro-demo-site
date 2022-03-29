@@ -19,7 +19,7 @@
 
                 </div>
                 <div class="about_me_art">
-                    <span class="hoverhere">Hover over the Line Above this Line</span>
+                    <p class="img__text">Hier de text of items!!</p>
                     <img class="img" src="images/pfp.jpg">
                 </div>
             </div>
