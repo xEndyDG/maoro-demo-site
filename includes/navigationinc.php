@@ -1,7 +1,8 @@
 <?php
 $menuitems = [
-    ["home", "home"], //positie 0 = url, 1 = naam
+    ['home', 'home'], //positie 0 = url, 1 = naam
     ['about', 'about'],
+    ['speeltuin', 'speeltuin']
 ];
 echo "<div class='navigation'><ul>";
 foreach ($menuitems as $item) { //voor elk item uit de array $menuitems als $item

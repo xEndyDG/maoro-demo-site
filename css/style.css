@@ -1,16 +1,8 @@
-body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh; }
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
 
 .navigation {
   border: 2px solid red; }
@@ -47,90 +39,18 @@ body {
     flex-wrap: wrap; }
 
 .about .about_container .about__main {
-  justify-content: space-between;
+  margin-top: 1.5rem;
   display: flex;
-  flex-direction: row; }
-  .about .about_container .about__main .about_me {
-    background: red;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(356deg, #246655, #b92a4f);
-    background-size: 400% 400%;
-    -webkit-animation: about__me 5s ease infinite;
-    -moz-animation: about__me 5s ease infinite;
-    animation: about__me 5s ease infinite; }
-
-@-webkit-keyframes about__me {
-  0% {
-    background-position: 77% 0%; }
-  50% {
-    background-position: 24% 100%; }
-  100% {
-    background-position: 77% 0%; } }
-
-@-moz-keyframes about__me {
-  0% {
-    background-position: 77% 0%; }
-  50% {
-    background-position: 24% 100%; }
-  100% {
-    background-position: 77% 0%; } }
-
-@keyframes about__me {
-  0% {
-    background-position: 77% 0%; }
-  50% {
-    background-position: 24% 100%; }
-  100% {
-    background-position: 77% 0%; } }
-  .about .about_container .about__main .about_me_art {
-    position: relative;
-    text-align: center;
-    object-fit: cover;
-    justify-content: center; }
-    .about .about_container .about__main .about_me_art .img {
-      z-index: 0; }
-    .about .about_container .about__main .about_me_art .img__text {
-      opacity: 0;
-      color: white;
-      -webkit-transition: all 300ms ease-in-out;
-      -o-transition: all 300ms ease-in-out;
-      transition: all 300ms ease-in-out;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1; }
-  .about .about_container .about__main .about_me_art:hover .img {
-    -webkit-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-    filter: blur(1px); }
-  .about .about_container .about__main .about_me_art:hover .img__text {
-    -webkit-animation: slide-in-bck-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    animation: slide-in-bck-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-
-@-webkit-keyframes slide-in-bck-bottom {
-  0% {
-    -webkit-transform: translateZ(700px) translateY(300px);
-    transform: translateZ(700px) translateY(300px);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateZ(0) translateY(0);
-    transform: translateZ(0) translateY(0);
-    opacity: 1; } }
-
-@keyframes slide-in-bck-bottom {
-  0% {
-    -webkit-transform: translateZ(700px) translateY(300px);
-    transform: translateZ(700px) translateY(300px);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateZ(0) translateY(0);
-    transform: translateZ(0) translateY(0);
-    opacity: 1; } }
+  justify-content: space-between;
+  flex-direction: column; }
+  .about .about_container .about__main .about__me__title {
+    background: green; }
+  .about .about_container .about__main .about__me__info {
+    background: blue; }
+  .about .about_container .about__main .about__me__skills {
+    background: purple; }
+  .about .about_container .about__main .about__me__main {
+    background: gold; }
 
 .footer {
   display: flex;
@@ -140,5 +60,4 @@ body {
   border: 2px solid red;
   position: absolute;
   width: 100%;
-  bottom: 0;
-  overflow: hidden; }
+  bottom: 0; }
