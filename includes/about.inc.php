@@ -10,7 +10,7 @@
                     </div>
                     <div class="informatie__content">
                         <div class="informatie-content-title">
-                            <h2>persoonlijke informatie:</h2>
+                            <h2>informatie:</h2>
                         </div>
                         <div class="informatie-content-item">
                             <a href="https://projectdg.eu/">Website</a>
@@ -27,7 +27,6 @@
                             Nummer
                         </div>
                     </div>
-
                 </div>
                 <div class="competenties">
                     <div class="competenties-item">
@@ -132,6 +131,14 @@
                     <div class="main-item-4">
                         <div class="main-title">
                             <h2>interesses</h2>
+                        </div>
+                        <div class="main-interesse">
+                            <h3>Interesse</h3>
+                            <p>Iets over de interesse / de hobby</p>
+                        </div>
+                        <div class="main-interesse">
+                            <h3>Interesse</h3>
+                            <p>Iets over de interesse / de hobby</p>
                         </div>
                         <div class="main-interesse">
                             <h3>Interesse</h3>

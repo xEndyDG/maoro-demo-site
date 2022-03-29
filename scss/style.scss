@@ -1,6 +1,21 @@
 //run 'npm run scss' && press ctr + s voor npm --watch
 //idee, hover here en dan opent een box zich waar de img met text schuin uit komen met een fade in
 
+
+
+//Colors
+$background: #fefefe;
+$text: #4b507a;
+
+$cyan: #60daaa;
+$darkgreen: #1c352d;
+$darkergreen:#13251f;
+$yellow: #fbca67;
+$orange: #ff8a30;
+$red: #f45e61;
+$purple: #6477b9;
+$blue: #0eb7da;
+
 html, * {
   box-sizing: border-box;
 }
@@ -14,13 +29,17 @@ html, body {
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
 }
+p, * {
+  color: $red;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
 
 .container {
   display: flex;
   flex-direction: column;
 
   .content {
-    background: red; //main body bg basically
+    background: black;
     flex: 1 0 auto;
   }
 
@@ -30,7 +49,7 @@ h1, h2, h3, h4, h5, h6, p {
 
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
+    border: 1px solid $red;
     width: 100%;
     bottom: 0;
   }
@@ -97,25 +116,53 @@ h1, h2, h3, h4, h5, h6, p {
 
 .about {
   .about_container {
-    .about__main { //waar alle content in staat
-      margin-top: 1.5rem;
 
+    .about__main { //waar alle content in staat
+      margin: 1.5rem;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      //font-family: "Jazz LET";
+      gap: 50px;
+      //border: 1px solid green;
+      //gap: 15px;
+
+      //border-style: solid;
+      //border-width: 0 10px 10px 0;
+      //border-color: $cyan;
+      //&:hover {
+      //  border-style: solid;
+      //  border-width: 0 10px 10px 0;
+      //  border-color: $yellow;
+      //  margin: 0 0 10px 0;
+      //}
 
       aside.sidebar {
-        width: 300px;
+        width: 250px;
 
         .persoonlijke_informatie {
-          background: blue;
-          padding: 1rem;
+
           height: 50%;
+          position: relative;
+
+          //&::after {
+          //  content: '';
+          //  position: absolute;
+          //  height: 1px;
+          //  background: green;
+          //  width: 50%;
+          //  bottom: 0;
+          //  left: 50%;
+          //  transform: translateX(-50%);
+          //}
+          h2 {
+            font-size: 28px;
+            text-shadow: 5px -5px $darkgreen;
+          }
 
           .persoonlijke_informatie_image {
             text-align: center;
-
+            border: 1px solid $red;
+            margin: 0 0 20px 0;
             img {
               max-height: 200px;
               max-width: 200px
@@ -128,18 +175,34 @@ h1, h2, h3, h4, h5, h6, p {
 
             .informatie-content-item {
               padding: 5px 5px 5px 0;
-
               a {
                 font-size: 26px;
+                &:hover {
+                  text-shadow: 5px -5px $darkgreen;
+                }
               }
             }
           }
         }
 
         .competenties {
-          background: purple;
+          background: $darkgreen;
           padding: 1rem;
           height: 50%;
+
+          .competenties-item {
+            background: $red;
+            p, * {
+              color: $darkgreen;
+            }
+          }
+          .competenties-item:nth-child(odd) {
+            background: $darkergreen;
+            p, * {
+              color: $red;
+            }
+          }
+
         }
       }
 
@@ -149,32 +212,54 @@ h1, h2, h3, h4, h5, h6, p {
         .title {
           justify-content: center;
           text-align: center;
-          background: green;
           padding: 1rem;
+          background: $darkgreen;
+
+
+            border-style: solid;
+            border-width:  2px 15px 15px 0;
+            border-color: $darkergreen;
+            margin: 0 0 20px 0;
 
           h1 {
             font-size: 56px;
           }
         }
-
         .main-content-box {
-          background: gold;
           padding: 1rem;
           display: flex;
           flex-wrap: wrap;
-          gap: 20px;
+          gap: 25px;
 
-          .main-item-2 {
-            width: 47.5%;
+          //background: $darkgreen;
+
+
+
+          .main-item-1 {
+            background: $darkgreen;
+            border-style: solid;
+            border-width: 0 15px 15px  0;
+            border-color: $darkergreen;
           }
 
-          .main-item-3 {
-            width: 47.5%;
-          }
+          .main-item-2, .main-item-3 {
+            width: calc(50% - 12.5px);
+            transition: 1s ease-in-out;
+            text-align: center;
 
+            background: $darkgreen;
+            border-style: solid;
+            border-width: 0 20px 20px  0;
+            border-color: $darkergreen;
+
+            &:hover { //on hover add a border????
+              transform: scale(1.3);
+            }
+          }
           .main-item-4 {
             flex-basis: 100%;
             flex-wrap: wrap;
+            border: 1px solid green;
 
             .main-title {
               text-align: center;
