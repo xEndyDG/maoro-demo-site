@@ -59,13 +59,14 @@ p, * {
 
   .footer {
     display: flex;
-    flex-shrink: 0;
-
     justify-content: center;
     align-items: center;
-    border: 1px solid $red;
     width: 100%;
     bottom: 0;
+    background: $darkergreen;
+    .footer-container {
+
+    }
   }
 }
 
@@ -297,7 +298,7 @@ p, * {
             }
           }
 
-          .main-item-2, .main-item-3 {
+          .main-item-2, .main-item-3, .main-item-4, .main-item-5 {
             width: calc(50% - 12.5px);
             transition: 1s ease-in-out;
             text-align: center;
@@ -311,68 +312,15 @@ p, * {
             box-shadow: 10px 10px 10px $reder;
 
 
-            &:hover { //on hover add a border????
-              transform: scale(1.3);
-            }
+            //&:hover { //on hover add a border????
+            //  transform: scale(1.3);
+            //}
           }
         }
 
       }
     }
 
-    .extra-informatie {
-      margin-top: 50px;
-
-      .extra-informatie-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 35px;
-
-        .extra-informatie-item {
-          width: 100%;
-          min-height: 200px;
-          background: $darkgreen;
-          border-style: solid;
-          border-width: 0 0 15px 15px;
-          border-color: $darkergreen;
-          box-shadow: -10px 10px 10px $reder;
-          text-align: center;
-
-
-
-          .img-fit {
-            width: 200px;
-            float: left;
-
-            img {
-              object-fit: cover;
-              width: 100%;
-              height: 200px;
-              border: 1px solid $red;
-            }
-          }
-        }
-
-        .extra-informatie-item:nth-child(even) {
-          background: $darkgreen;
-          border-style: solid;
-          border-width: 0 15px 15px 0;
-          border-color: $darkergreen;
-          box-shadow: 10px 10px 10px $reder;
-          .img-fit {
-            float: right;
-            width: 200px;
-
-            img {
-              object-fit: cover;
-              width: 100%;
-              height: 200px;
-              border: 1px solid $red;
-            }
-          }
-        }
-      }
-    }
   }
 }
 

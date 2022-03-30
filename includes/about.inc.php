@@ -4,37 +4,7 @@
         <div class="about__main" id="top">
             <aside class="sidebar">
                 <div class="persoonlijke_informatie">
-                    <!--                    <div class="persoonlijke_informatie_image">-->
                     <img class="img" src="images/pfp.jpg">
-                    <!--                    </div>-->
-
-                    <div class="informatie__content">
-
-                    </div>
-                    <div class="informatie__content">
-                    </div>
-                    <div class="informatie__content">
-                    </div>
-                    <!--                    <div class="informatie__content">-->
-                    <!--                        <div class="informatie-content-title">-->
-                    <!--                            <h2>informatie:</h2>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="informatie-content-item">-->
-                    <!--                            <a href="https://projectdg.eu/">Website</a>-->
-                    <!--                            <img src="images/svg/iconmonstr-computer-10.svg">-->
-                    <!--                        </div>-->
-                    <!--                        <div class="informatie-content-item">-->
-                    <!--                            <a href="https://open.spotify.com/show/0pV3t8VIUDbV5xCj2U76HH?si=b4af9e416157482b">-->
-                    <!--                                Podcast-->
-                    <!--                            </a>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="informatie-content-item">-->
-                    <!--                            <a href="">Linkedin</a>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="informatie-content-item">-->
-                    <!--                            Nummer-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
                 </div>
                 <div class="competenties">
                     <div class="competenties-item">
@@ -173,92 +143,103 @@
                         <h3>Taal</h3>
                         <p>Ervaring met de taal</p>
                     </div>
+                    <div class="main-item-4">
+                        <h2>Talen</h2>
+                        <h3>Taal</h3>
+                        <p>Ervaring met de taal</p>
+                        <h3>Taal</h3>
+                        <p>Ervaring met de taal</p>
+                        <h3>Taal</h3>
+                        <p>Ervaring met de taal</p>
+                    </div>
+                    <div class="main-item-5">
+                    </div>
                 </div>
             </div>
         </div>
 
         <!--        sub-projecten / short stories / mashups / random?-->
-        <div class="extra-informatie">
-            <div class="extra-informatie-wrapper">
-                <div class="extra-informatie-item">
-                    <div class="img-fit">
-                        <img src="images/pfp.jpg">
-                    </div>
-                    <div class="extra-content">
-                        <h2>Project naam A</h2>
-                        <span>
-                            Hier dan iets over het zekere project wat besproken moet worden.
-                            Welk project dat is? Dit weet ik nog niet precies! voor nu is dit dummy text.
-                            Deze dummy text moet dan ook niet te lang worden.
-                        </span>
-                    </div>
-                </div>
-                <div class="extra-informatie-item">
-                    <div class="img-fit">
-                        <img src="images/pfp.jpg">
-                    </div>
-                    <div class="extra-content">
-                        <h2>Project naam B</h2>
-                        <span><i>
-                            Hier dan iets over het zekere project wat besproken moet worden.
-                            Welk project dat is? Dit weet ik nog niet precies! voor nu is dit dummy text.
-                            Deze dummy text moet dan ook niet te lang worden.
-
-                            Alhoewel, dat had het niet hoeven te zijn. Maar dit content blok moet langer zijn.
-                            Dus moet ik het ook gaan vullen met meer informatie. Gelukkig ben ik een prof
-                            ik dummy text schrijven sinds ik dit mijn hele middelbare heb gedaan tijdens de lessen
-                            zodat het leek alsof ik aan het opletten was. De docenten kwamen er dan ook echt nooit
-                            achter dat ik gewoon youtube zat te kijken met mezelf en de mensen die achter me zaten.
-                        </i>
-                        <p>Dit is een beetje text wat de lijst uiteindelijk duidelijker moet maken.</p>
-                        <ul>
-                            <li>Lijst item 1</li>
-                            <li>Lijst item 2</li>
-                            <li>Lijst item 3</li>
-                            <li>Lijst item 4</li>
-                            <li>Lijst item 3</li>
-                            <li>Lijst item 4</li>
-                            <li>Lijst item 3</li>
-                            <li>Lijst item 4</li>
-                        </ul>
-                            <p>
-                                Hier komt dan meer text. Maar dat gaat weer over niks specifiek.
-                                Dit kan gaan over een short story die ik gesscheven heb,
-                                een foto collectie die ik geschoten heb,
-                                ervaringen die ik ergens heb opgedaan,
-                                enz weetje?
-                            </p>
-                        </span>
-                    </div>
-                </div>
-                <div class="extra-informatie-item">
-                    <div class="img-fit">
-                        <img src="images/pfp.jpg">
-                    </div>
-                    <div class="extra-content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at autem deleniti est incidunt
-                        magnam qui, ullam unde. A cumque dignissimos expedita molestias, pariatur porro quibusdam
-                        quisquam sed. Eos, quos.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque culpa, impedit laudantium modi
-                        voluptatem. Aliquid at autem cumque debitis, deserunt fuga ipsa minus natus, necessitatibus
-                        placeat possimus quia quo!
-                    </div>
-                </div>
-                <div class="extra-informatie-item">
-                    <div class="img-fit">
-                        <img src="images/pfp.jpg">
-                    </div>
-                    <div class="extra-content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at autem deleniti est incidunt
-                        magnam qui, ullam unde. A cumque dignissimos expedita molestias, pariatur porro quibusdam
-                        quisquam sed. Eos, quos.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque culpa, impedit laudantium modi
-                        voluptatem. Aliquid at autem cumque debitis, deserunt fuga ipsa minus natus, necessitatibus
-                        placeat possimus quia quo!
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--        <div class="extra-informatie">-->
+        <!--            <div class="extra-informatie-wrapper">-->
+        <!--                <div class="extra-informatie-item">-->
+        <!--                    <div class="img-fit">-->
+        <!--                        <img src="images/pfp.jpg">-->
+        <!--                    </div>-->
+        <!--                    <div class="extra-content">-->
+        <!--                        <h2>Project naam A</h2>-->
+        <!--                        <span>-->
+        <!--                            Hier dan iets over het zekere project wat besproken moet worden.-->
+        <!--                            Welk project dat is? Dit weet ik nog niet precies! voor nu is dit dummy text.-->
+        <!--                            Deze dummy text moet dan ook niet te lang worden.-->
+        <!--                        </span>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <div class="extra-informatie-item">-->
+        <!--                    <div class="img-fit">-->
+        <!--                        <img src="images/pfp.jpg">-->
+        <!--                    </div>-->
+        <!--                    <div class="extra-content">-->
+        <!--                        <h2>Project naam B</h2>-->
+        <!--                        <span><i>-->
+        <!--                            Hier dan iets over het zekere project wat besproken moet worden.-->
+        <!--                            Welk project dat is? Dit weet ik nog niet precies! voor nu is dit dummy text.-->
+        <!--                            Deze dummy text moet dan ook niet te lang worden.-->
+        <!---->
+        <!--                            Alhoewel, dat had het niet hoeven te zijn. Maar dit content blok moet langer zijn.-->
+        <!--                            Dus moet ik het ook gaan vullen met meer informatie. Gelukkig ben ik een prof-->
+        <!--                            ik dummy text schrijven sinds ik dit mijn hele middelbare heb gedaan tijdens de lessen-->
+        <!--                            zodat het leek alsof ik aan het opletten was. De docenten kwamen er dan ook echt nooit-->
+        <!--                            achter dat ik gewoon youtube zat te kijken met mezelf en de mensen die achter me zaten.-->
+        <!--                        </i>-->
+        <!--                        <p>Dit is een beetje text wat de lijst uiteindelijk duidelijker moet maken.</p>-->
+        <!--                        <ul>-->
+        <!--                            <li>Lijst item 1</li>-->
+        <!--                            <li>Lijst item 2</li>-->
+        <!--                            <li>Lijst item 3</li>-->
+        <!--                            <li>Lijst item 4</li>-->
+        <!--                            <li>Lijst item 3</li>-->
+        <!--                            <li>Lijst item 4</li>-->
+        <!--                            <li>Lijst item 3</li>-->
+        <!--                            <li>Lijst item 4</li>-->
+        <!--                        </ul>-->
+        <!--                            <p>-->
+        <!--                                Hier komt dan meer text. Maar dat gaat weer over niks specifiek.-->
+        <!--                                Dit kan gaan over een short story die ik gesscheven heb,-->
+        <!--                                een foto collectie die ik geschoten heb,-->
+        <!--                                ervaringen die ik ergens heb opgedaan,-->
+        <!--                                enz weetje?-->
+        <!--                            </p>-->
+        <!--                        </span>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <div class="extra-informatie-item">-->
+        <!--                    <div class="img-fit">-->
+        <!--                        <img src="images/pfp.jpg">-->
+        <!--                    </div>-->
+        <!--                    <div class="extra-content">-->
+        <!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at autem deleniti est incidunt-->
+        <!--                        magnam qui, ullam unde. A cumque dignissimos expedita molestias, pariatur porro quibusdam-->
+        <!--                        quisquam sed. Eos, quos.-->
+        <!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque culpa, impedit laudantium modi-->
+        <!--                        voluptatem. Aliquid at autem cumque debitis, deserunt fuga ipsa minus natus, necessitatibus-->
+        <!--                        placeat possimus quia quo!-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <div class="extra-informatie-item">-->
+        <!--                    <div class="img-fit">-->
+        <!--                        <img src="images/pfp.jpg">-->
+        <!--                    </div>-->
+        <!--                    <div class="extra-content">-->
+        <!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at autem deleniti est incidunt-->
+        <!--                        magnam qui, ullam unde. A cumque dignissimos expedita molestias, pariatur porro quibusdam-->
+        <!--                        quisquam sed. Eos, quos.-->
+        <!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque culpa, impedit laudantium modi-->
+        <!--                        voluptatem. Aliquid at autem cumque debitis, deserunt fuga ipsa minus natus, necessitatibus-->
+        <!--                        placeat possimus quia quo!-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
     </div>
 </section>
 

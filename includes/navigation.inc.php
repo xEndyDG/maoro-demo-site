@@ -2,7 +2,8 @@
 $menuitems = [
     ['home', 'home'], //positie 0 = url, 1 = naam
     ['about', 'about'],
-    ['speeltuin', 'speeltuin']
+    ['archive', 'archive'],
+    ['speeltuin', 'speeltuin'],
 ];
 
 
