@@ -1,0 +1,49 @@
+Home page
+    -Alles LOL
+    -Layout maken
+        *Simpele layout met directe referenties naar andere pagina's
+            Vul deze dan ook met dummy text voor nu ^
+    -Tentoonstelling
+        *een tentoonstelling maken van foto's over projecten / code / werkwijze
+
+
+About page
+    -Nieuwe header
+    -Alle blokken vullen met oprechte informatie
+    -Projecten afstand en opvulling verbeteren
+    -Text opmaak verbeteren
+    -Animaties toevoegen aan elk element
+
+Navigatie
+    -Styling toevoegen aan UL en Li
+    -Achtergrond blur wanneer de dropdown tervoorschijn komt
+    -Sub mappen binnen de include folder (bijv map: projecten   inhoudt: project1.inc.php, project2.inc.php)
+    -Animaties verfijnen
+
+Footer
+    -Opvullen met random blokken / circles / driehoeken die rond spinnen en de wegvagen
+    -On hover van de link, scale vergroten en informatie over link duidelijk maken
+    -Algemene styling van text en elementen
+    -Fixed hoogte geven
+
+Archief
+    -Pagina gesplits in 2 velden.
+        *1 veld voor projecten en 1 veld voor short stories / foto's / troep
+    -Layout zo maken dat het niet hinderlijk is om naar te kijken
+    -
+
+Random
+    -Design voor DG logo maken.
+    -Slogen voor DG maken
+    -Naam van styling objecten binnen: about, footer en navigation verbeteren
+        *Kijk hiervoor naar: https://css-tricks.com/bem-101/
+    -Speeltuin pagina vullen met dummy animaties
+        *https://www.w3schools.com/howto/howto_js_animate.asp
+        *https://css-tricks.com/lodge/learn-jquery/
+    -Speeltuin vullen met css dummy test
+        *https://css-tricks.com/a-complete-guide-to-links-and-buttons/
+        *https://jstutorial.medium.com/css-flex-vs-grid-tutorial-ffb92e115a98
+        *https://tobiasahlin.com/blog/flexbox-break-to-new-row/
+
+End game:
+    -Responsive maken

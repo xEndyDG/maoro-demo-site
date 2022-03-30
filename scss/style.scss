@@ -58,14 +58,26 @@ p, * {
   }
 
   .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     bottom: 0;
     background: $darkergreen;
     .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
 
+      .footer-contact {
+        display: flex;
+        gap: 50px;
+        flex-basis: 100%;
+        justify-content: center;
+      }
+      .footer-extra {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
     }
   }
 }
@@ -179,7 +191,6 @@ p, * {
 
     .home__content {
       .home__list {
-
       }
 
       display: flex;
