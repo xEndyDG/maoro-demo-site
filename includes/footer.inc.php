@@ -9,6 +9,7 @@
         </div>
         <div class="footer-extra">
             <p><i>Hier iets toekomstelijks copyright ofzo. </i></p>
+            <p><a href="">Found a bug / mistake / error? tell me!</a></p>
         </div>
     </div>
 </section>

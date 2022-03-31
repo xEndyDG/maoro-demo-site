@@ -1,3 +1,18 @@
+Algemeen idee:
+    Een neon cyber achtig file system website
+
+    muziek wat je kan pauzeren
+
+
+    Interesse sub-page
+        *Jazz
+            _Een pagina / deel van een pagina styled voor jazz en met jazz muziek op de achtergrond
+        *Edm
+            _Edm pagina / deel van pagina,
+                Animaties die synced zijn met de muziek?? holy shit
+
+
+
 Home page
     -Alles LOL
     -Layout maken
@@ -7,20 +22,20 @@ Home page
         *een tentoonstelling maken van foto's over projecten / code / werkwijze
 
 
+
+
+
+OLD IDEA
+
+
 About page
-    -Nieuwe header      DONE    (nu nog animaties fixen)
-    -Alle blokken vullen met oprechte informatie    CURRENT
     -Projecten afstand en opvulling verbeteren
     -Text opmaak verbeteren
     -Animaties toevoegen aan elk element
+    -layout height calculation
 
 Navigatie
-    -Styling toevoegen aan UL en Li
-        *Zorg ervoor dat de drop down een kwart van de site bedekt met een black / achtergrond waar de li items center naartoe zweven
-
-    -Achtergrond blur wanneer de dropdown tevoorschijn komt
     -Sub mappen binnen de include folder (bijv map: projecten   inhoudt: project1.inc.php, project2.inc.php)
-    -Animaties verfijnen
 
 Footer
     -Opvullen met random blokken / circles / driehoeken die rond spinnen en de wegvagen

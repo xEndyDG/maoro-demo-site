@@ -81,18 +81,6 @@ p, * {
   display: flex;
   flex-wrap: wrap;
 
-  @keyframes input-shadow {
-    0% {
-      box-shadow: 10px 10px 10px $reder;
-    }
-    50% {
-      box-shadow: none;
-    }
-    100% {
-      box-shadow: 10px 10px 10px $reder;;
-    }
-  }
-
   ul {
     height: 0;
     overflow: hidden;
@@ -111,8 +99,22 @@ p, * {
     width: 100%;
     z-index: 2;
 
-    a { //link styling
+    a {
+      display: inline-block;
+      color: #008000;
+      letter-spacing: 2px;
+      text-transform: uppercase;
       text-decoration: none;
+      //font-size: 1.5em;
+      overflow: hidden;
+    }
+
+    a:hover {
+      color: #111;
+      background: $darkgreen;
+      box-shadow: 30px 30px 50px $darkergreen;
+      //box-shadow: 10px 10px 10px $reder;
+
     }
 
     li { //before
@@ -120,8 +122,6 @@ p, * {
       margin: 10px 0 10px 0;
       transform: translateX(100%);
       transition: 500ms ease-in-out;
-
-
     }
   }
 
@@ -144,16 +144,6 @@ p, * {
         margin: 6px 0;
         transition: 0.4s;
       }
-
-      //.bar1 {
-      //  background: $reder;
-      //}
-      //.bar2 {
-      //  background: $cyan;
-      //}
-      //.bar3 {
-      //  background: $darkgreen;
-      //}
     }
   }
 }
@@ -165,27 +155,54 @@ p, * {
     list-style-type: none;
 
     a {
+      //padding: 20px 20px;
+      display: inline-block;
+      color: #008000;
+      letter-spacing: 2px;
+      text-transform: uppercase;
       text-decoration: none;
+      //font-size: 1.5em;
+      overflow: hidden;
+    }
+
+    //a.active {
+    //  background: $darkergreen;
+    //}
+
+    a:hover {
+      color: #111;
+      background: $darkgreen;
+      box-shadow: 30px 30px 50px $darkergreen;
+      //box-shadow: 10px 10px 10px $reder;
     }
 
     li.stagger {
       transform: translateX(100%);
       transition: 500ms ease-in-out;
-      background: $darkgreen;
-
-
-      &:hover {
-        -webkit-animation: input-shadow ease-in-out 1.5s infinite;
-        animation: input-shadow ease-in-out 1.5s infinite;
-      }
-
     }
 
     li.stagger--active {
       transform: translateX(0);
 
       a {
+        padding: 20px 20px;
+        display: inline-block;
+        letter-spacing: 2px;
+        text-transform: uppercase;
         text-decoration: none;
+        //font-size: 3em;
+        overflow: hidden;
+        color: #111;
+        background: $darkgreen;
+        box-shadow: 0 0 50px $darkgreen;
+
+      }
+
+      a:hover {
+        color: #111;
+        background: $darkgreen;
+        box-shadow: 30px 30px 50px $darkergreen;
+        //box-shadow: 10px 10px 10px $reder;
       }
     }
   }
@@ -240,221 +257,227 @@ p, * {
 
 .about {
   .about_container {
-    .portfolio {
-      height: 100%;
+    height: 100%;
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    margin: 3rem;
+    padding: 2rem;
+
+    .portfolio-v1 {
       display: flex;
-      //justify-content: center;
-      //text-align: center;
-      flex-direction: column;
-      margin: 3rem;
-      padding: 2rem;
+      gap: 50px;
 
-      .portfolio-v1 {
-        display: flex;
-        gap: 50px;
-        .title {
-          background: $darkgreen;
-          border-style: solid;
-          border-width: 0 15px 15px 0;
-          border-color: $darkergreen;
-          box-shadow: 10px 10px 10px $reder;
-          height: 300px;
-          width: 400px;
+      .title {
+        background: $darkgreen;
+        border-style: solid;
+        border-width: 0 15px 15px 0;
+        border-color: $darkergreen;
+        box-shadow: 10px 10px 10px $reder;
+        height: 300px;
+        width: 400px;
 
-          flex-basis: 25%;
-          flex-direction: column;
-          text-align: center;
-          justify-content: center;
+        flex-basis: 25%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
 
-          &:hover {
-            cursor: pointer;
-          }
+        &:hover {
+          cursor: pointer;
         }
-        .about__main {
-          flex-basis: 75%;
+      }
 
-          transition: all 1s ease-in-out;
-          height: 0;
-          opacity: 0;
-          overflow: hidden; //? als dit visibilty is fucked het de footer? how to fix lol
+      .portfolio-v1-main {
+        flex-basis: 75%;
 
-          display: flex;
-          flex-wrap: wrap;
-          flex-direction: row;
-          gap: 50px;
+        transition: all 1s ease-in-out;
+        //height: 0;
+        opacity: 0;
+        overflow: hidden; //? als dit visibilty is fucked het de footer? how to fix lol
 
-          aside.sidebar {
-            width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 50px;
 
-            .persoonlijke_informatie {
-              position: relative;
+        aside.sidebar {
+          width: 250px;
 
-              h2 {
-                font-size: 28px;
-              }
+          .persoonlijke_informatie {
+            position: relative;
 
-              img {
-                object-fit: cover;
-                width: 100%;
-                height: auto;
-                border: 1px solid $red;
-              }
+            h2 {
+              font-size: 28px;
             }
 
-            .competenties { //De flexbox die alle items bezit
-              padding: 1rem;
-              display: flex;
-              flex-wrap: wrap;
-              gap: 50px;
-
-
-              .competentie { //individuele items
-                background: $darkgreen;
-                border-style: solid;
-                border-width: 0 15px 15px 0;
-                border-color: $darkergreen;
-                box-shadow: 10px 10px 10px $reder;
-                flex-basis: 100%;
-
-
-                p {
-                  text-align: center;
-                  //padding: 0;
-                  margin: 0;
-                }
-
-                h1 {
-                  padding: 10px 0 0 0;
-                  text-align: center;
-                  margin: 0;
-                }
-              }
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: auto;
+              border: 1px solid $red;
             }
           }
 
-          .main__content {
-            width: calc(100% - 300px);
+          .competenties { //De flexbox die alle items bezit
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
 
-            .title {
-              justify-content: center;
-              text-align: center;
-              padding: 1rem;
+
+            .competentie { //individuele items
               background: $darkgreen;
-
               border-style: solid;
-              border-width: 2px 15px 15px 0;
+              border-width: 0 15px 15px 0;
               border-color: $darkergreen;
-              margin: 0 0 20px 0;
               box-shadow: 10px 10px 10px $reder;
+              flex-basis: 100%;
+
+
+              p {
+                text-align: center;
+                //padding: 0;
+                margin: 0;
+              }
 
               h1 {
-                font-size: 56px;
+                padding: 10px 0 0 0;
+                text-align: center;
+                margin: 0;
               }
             }
+          }
+        }
 
-            .main-content-box {
+        .main__content {
+          width: calc(100% - 300px);
+
+          .title {
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+            background: $darkgreen;
+
+            border-style: solid;
+            border-width: 2px 15px 15px 0;
+            border-color: $darkergreen;
+            margin: 0 0 20px 0;
+            box-shadow: 10px 10px 10px $reder;
+
+            h1 {
+              font-size: 56px;
+            }
+          }
+
+          .main-content-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px; //mierenneuk gedrag >:(
+
+            .main-item-1 {
               display: flex;
               flex-wrap: wrap;
-              gap: 50px; //mierenneuk gedrag >:(
 
-              .main-item-1 {
+              gap: 75px;
+
+              .main-item-title-container {
                 display: flex;
-                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 0 5px 0 5px;
 
-                gap: 75px;
-
-                .main-item-title-container {
-                  display: flex;
-                  justify-content: space-between;
-                  margin: 0 5px 0 5px;
-
-                  .main-item-1-title {
-                    text-align: center;
-                    padding: 1rem;
-                    background: $darkgreen;
-                    border-style: solid;
-                    border-width: 0 15px 15px 0;
-                    border-color: $darkergreen;
-                    box-shadow: 10px 10px 10px $reder;
-                    margin: 50px 0 50px 0;
-                    flex-basis: 45%;
-                  }
-                }
-
-                .main-item-1-content {
+                .main-item-1-title {
+                  text-align: center;
                   padding: 1rem;
                   background: $darkgreen;
                   border-style: solid;
                   border-width: 0 15px 15px 0;
                   border-color: $darkergreen;
                   box-shadow: 10px 10px 10px $reder;
-                  //margin: 0px 0 50px 0; //margin tussen de 'projecten'
-                  flex-basis: 100%;
-                  margin: 0 5px 0 5px;
-
+                  margin: 50px 0 50px 0;
+                  flex-basis: 45%;
                 }
               }
 
-              .main-item-2 {
-                display: flex;
-                gap: 50px;
-                justify-content: space-between;
-                width: 100%;
+              .main-item-1-content {
+                padding: 1rem;
+                background: $darkgreen;
+                border-style: solid;
+                border-width: 0 15px 15px 0;
+                border-color: $darkergreen;
+                box-shadow: 10px 10px 10px $reder;
+                flex-basis: 100%;
+                margin: 0 5px 0 5px;
 
-                .main-item-2-content {
-                  margin: 0 5px 5px 5px;
-                  width: 100%;
-                  transition: all 300ms ease-in-out;
-                  text-align: center;
-                  background: $darkgreen;
-                  border-style: solid;
-                  border-width: 0 20px 20px 0;
-                  border-color: $darkergreen;
-                  box-shadow: 10px 10px 10px $reder;
-                }
-
-                .animate {
-                  transform: scale(1.3);
-
-                }
-
-                //&:hover { //on hover add a border????
-                //  transform: scale(1.3);
-                //}
               }
             }
 
-          }
-        }
+            .main-item-2 {
+              display: flex;
+              gap: 50px;
+              justify-content: space-between;
+              width: 100%;
 
-        .visible {
-          height: 2000px;
-          //aanpassen op basis van
-          // content lengte of anders met javascript berekenen
-          // op pagina laad en dan hier in zetten
-          visibility: visible;
-          opacity: 1;
+              .main-item-2-content {
+                margin: 0 5px 5px 5px;
+                width: 100%;
+                transition: all 300ms ease-in-out;
+                text-align: center;
+                background: $darkgreen;
+                border-style: solid;
+                border-width: 0 20px 20px 0;
+                border-color: $darkergreen;
+                box-shadow: 10px 10px 10px $reder;
+              }
+
+              .animate {
+                //hier dan de animatie die de shadow border laat groeien en krimpen?
+                transform: scale(1.3);
+              }
+            }
+          }
         }
       }
 
-      .portfolio-v2 {
-        .title {
-          background: $darkgreen;
-          border-style: solid;
-          border-width: 0 15px 15px 0;
-          border-color: $darkergreen;
-          box-shadow: 10px 10px 10px $reder;
-          //flex-basis: 100%;
-          height: 300px;
-          width: 400px;
+      .visible {
+        height: 2000px;
+        //aanpassen op basis van
+        // content lengte of anders met javascript berekenen
+        // op pagina laad en dan hier in zetten
+        visibility: visible;
+        opacity: 1;
+      }
+    }
 
-          &:hover {
-            cursor: pointer;
-          }
+    .about-me {
+      display: flex;
+      gap: 50px;
+
+      .title {
+        background: $darkgreen;
+        border-style: solid;
+        border-width: 0 15px 15px 0;
+        border-color: $darkergreen;
+        box-shadow: 10px 10px 10px $reder;
+        height: 300px;
+        width: 400px;
+
+        flex-basis: 25%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        &:hover {
+          cursor: pointer;
         }
+      }
+
+      .about__main {
+        flex-basis: 75%;
+        background: gray;
       }
 
     }
+
   }
 }
 

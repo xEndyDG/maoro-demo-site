@@ -43,14 +43,6 @@ p, * {
   text-align: center;
   display: flex;
   flex-wrap: wrap; }
-
-@keyframes input-shadow {
-  0% {
-    box-shadow: 10px 10px 10px #bd484a; }
-  50% {
-    box-shadow: none; }
-  100% {
-    box-shadow: 10px 10px 10px #bd484a; } }
   .navigation ul {
     height: 0;
     overflow: hidden;
@@ -69,7 +61,16 @@ p, * {
     width: 100%;
     z-index: 2; }
     .navigation ul a {
-      text-decoration: none; }
+      display: inline-block;
+      color: #008000;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      overflow: hidden; }
+    .navigation ul a:hover {
+      color: #111;
+      background: #1c352d;
+      box-shadow: 30px 30px 50px #13251f; }
     .navigation ul li {
       padding: 1rem;
       margin: 10px 0 10px 0;
@@ -96,18 +97,35 @@ p, * {
   visibility: visible;
   list-style-type: none; }
   .navigation--active ul a {
-    text-decoration: none; }
+    display: inline-block;
+    color: #008000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden; }
+  .navigation--active ul a:hover {
+    color: #111;
+    background: #1c352d;
+    box-shadow: 30px 30px 50px #13251f; }
   .navigation--active ul li.stagger {
     transform: translateX(100%);
-    transition: 500ms ease-in-out;
-    background: #1c352d; }
-    .navigation--active ul li.stagger:hover {
-      -webkit-animation: input-shadow ease-in-out 1.5s infinite;
-      animation: input-shadow ease-in-out 1.5s infinite; }
+    transition: 500ms ease-in-out; }
   .navigation--active ul li.stagger--active {
     transform: translateX(0); }
     .navigation--active ul li.stagger--active a {
-      text-decoration: none; }
+      padding: 20px 20px;
+      display: inline-block;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      overflow: hidden;
+      color: #111;
+      background: #1c352d;
+      box-shadow: 0 0 50px #1c352d; }
+    .navigation--active ul li.stagger--active a:hover {
+      color: #111;
+      background: #1c352d;
+      box-shadow: 30px 30px 50px #13251f; }
 
 .navigation--active .navigation-icon .menu-bar-container .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -135,16 +153,17 @@ p, * {
     justify-content: space-around;
     flex-wrap: wrap; }
 
-.about .about_container .portfolio {
+.about .about_container {
   height: 100%;
   display: flex;
+  gap: 100px;
   flex-direction: column;
   margin: 3rem;
   padding: 2rem; }
-  .about .about_container .portfolio .portfolio-v1 {
+  .about .about_container .portfolio-v1 {
     display: flex;
     gap: 50px; }
-    .about .about_container .portfolio .portfolio-v1 .title {
+    .about .about_container .portfolio-v1 .title {
       background: #1c352d;
       border-style: solid;
       border-width: 0 15px 15px 0;
@@ -156,51 +175,50 @@ p, * {
       flex-direction: column;
       text-align: center;
       justify-content: center; }
-      .about .about_container .portfolio .portfolio-v1 .title:hover {
+      .about .about_container .portfolio-v1 .title:hover {
         cursor: pointer; }
-    .about .about_container .portfolio .portfolio-v1 .about__main {
+    .about .about_container .portfolio-v1 .portfolio-v1-main {
       flex-basis: 75%;
       transition: all 1s ease-in-out;
-      height: 0;
       opacity: 0;
       overflow: hidden;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       gap: 50px; }
-      .about .about_container .portfolio .portfolio-v1 .about__main aside.sidebar {
+      .about .about_container .portfolio-v1 .portfolio-v1-main aside.sidebar {
         width: 250px; }
-        .about .about_container .portfolio .portfolio-v1 .about__main aside.sidebar .persoonlijke_informatie {
+        .about .about_container .portfolio-v1 .portfolio-v1-main aside.sidebar .persoonlijke_informatie {
           position: relative; }
-          .about .about_container .portfolio .portfolio-v1 .about__main aside.sidebar .persoonlijke_informatie h2 {
+          .about .about_container .portfolio-v1 .portfolio-v1-main aside.sidebar .persoonlijke_informatie h2 {
             font-size: 28px; }
-          .about .about_container .portfolio .portfolio-v1 .about__main aside.sidebar .persoonlijke_informatie img {
+          .about .about_container .portfolio-v1 .portfolio-v1-main aside.sidebar .persoonlijke_informatie img {
             object-fit: cover;
             width: 100%;
             height: auto;
             border: 1px solid #f45e61; }
-        .about .about_container .portfolio .portfolio-v1 .about__main aside.sidebar .competenties {
+        .about .about_container .portfolio-v1 .portfolio-v1-main aside.sidebar .competenties {
           padding: 1rem;
           display: flex;
           flex-wrap: wrap;
           gap: 50px; }
-          .about .about_container .portfolio .portfolio-v1 .about__main aside.sidebar .competenties .competentie {
+          .about .about_container .portfolio-v1 .portfolio-v1-main aside.sidebar .competenties .competentie {
             background: #1c352d;
             border-style: solid;
             border-width: 0 15px 15px 0;
             border-color: #13251f;
             box-shadow: 10px 10px 10px #bd484a;
             flex-basis: 100%; }
-            .about .about_container .portfolio .portfolio-v1 .about__main aside.sidebar .competenties .competentie p {
+            .about .about_container .portfolio-v1 .portfolio-v1-main aside.sidebar .competenties .competentie p {
               text-align: center;
               margin: 0; }
-            .about .about_container .portfolio .portfolio-v1 .about__main aside.sidebar .competenties .competentie h1 {
+            .about .about_container .portfolio-v1 .portfolio-v1-main aside.sidebar .competenties .competentie h1 {
               padding: 10px 0 0 0;
               text-align: center;
               margin: 0; }
-      .about .about_container .portfolio .portfolio-v1 .about__main .main__content {
+      .about .about_container .portfolio-v1 .portfolio-v1-main .main__content {
         width: calc(100% - 300px); }
-        .about .about_container .portfolio .portfolio-v1 .about__main .main__content .title {
+        .about .about_container .portfolio-v1 .portfolio-v1-main .main__content .title {
           justify-content: center;
           text-align: center;
           padding: 1rem;
@@ -210,21 +228,21 @@ p, * {
           border-color: #13251f;
           margin: 0 0 20px 0;
           box-shadow: 10px 10px 10px #bd484a; }
-          .about .about_container .portfolio .portfolio-v1 .about__main .main__content .title h1 {
+          .about .about_container .portfolio-v1 .portfolio-v1-main .main__content .title h1 {
             font-size: 56px; }
-        .about .about_container .portfolio .portfolio-v1 .about__main .main__content .main-content-box {
+        .about .about_container .portfolio-v1 .portfolio-v1-main .main__content .main-content-box {
           display: flex;
           flex-wrap: wrap;
           gap: 50px; }
-          .about .about_container .portfolio .portfolio-v1 .about__main .main__content .main-content-box .main-item-1 {
+          .about .about_container .portfolio-v1 .portfolio-v1-main .main__content .main-content-box .main-item-1 {
             display: flex;
             flex-wrap: wrap;
             gap: 75px; }
-            .about .about_container .portfolio .portfolio-v1 .about__main .main__content .main-content-box .main-item-1 .main-item-title-container {
+            .about .about_container .portfolio-v1 .portfolio-v1-main .main__content .main-content-box .main-item-1 .main-item-title-container {
               display: flex;
               justify-content: space-between;
               margin: 0 5px 0 5px; }
-              .about .about_container .portfolio .portfolio-v1 .about__main .main__content .main-content-box .main-item-1 .main-item-title-container .main-item-1-title {
+              .about .about_container .portfolio-v1 .portfolio-v1-main .main__content .main-content-box .main-item-1 .main-item-title-container .main-item-1-title {
                 text-align: center;
                 padding: 1rem;
                 background: #1c352d;
@@ -234,7 +252,7 @@ p, * {
                 box-shadow: 10px 10px 10px #bd484a;
                 margin: 50px 0 50px 0;
                 flex-basis: 45%; }
-            .about .about_container .portfolio .portfolio-v1 .about__main .main__content .main-content-box .main-item-1 .main-item-1-content {
+            .about .about_container .portfolio-v1 .portfolio-v1-main .main__content .main-content-box .main-item-1 .main-item-1-content {
               padding: 1rem;
               background: #1c352d;
               border-style: solid;
@@ -243,12 +261,12 @@ p, * {
               box-shadow: 10px 10px 10px #bd484a;
               flex-basis: 100%;
               margin: 0 5px 0 5px; }
-          .about .about_container .portfolio .portfolio-v1 .about__main .main__content .main-content-box .main-item-2 {
+          .about .about_container .portfolio-v1 .portfolio-v1-main .main__content .main-content-box .main-item-2 {
             display: flex;
             gap: 50px;
             justify-content: space-between;
             width: 100%; }
-            .about .about_container .portfolio .portfolio-v1 .about__main .main__content .main-content-box .main-item-2 .main-item-2-content {
+            .about .about_container .portfolio-v1 .portfolio-v1-main .main__content .main-content-box .main-item-2 .main-item-2-content {
               margin: 0 5px 5px 5px;
               width: 100%;
               transition: all 300ms ease-in-out;
@@ -258,19 +276,29 @@ p, * {
               border-width: 0 20px 20px 0;
               border-color: #13251f;
               box-shadow: 10px 10px 10px #bd484a; }
-            .about .about_container .portfolio .portfolio-v1 .about__main .main__content .main-content-box .main-item-2 .animate {
+            .about .about_container .portfolio-v1 .portfolio-v1-main .main__content .main-content-box .main-item-2 .animate {
               transform: scale(1.3); }
-    .about .about_container .portfolio .portfolio-v1 .visible {
+    .about .about_container .portfolio-v1 .visible {
       height: 2000px;
       visibility: visible;
       opacity: 1; }
-  .about .about_container .portfolio .portfolio-v2 .title {
-    background: #1c352d;
-    border-style: solid;
-    border-width: 0 15px 15px 0;
-    border-color: #13251f;
-    box-shadow: 10px 10px 10px #bd484a;
-    height: 300px;
-    width: 400px; }
-    .about .about_container .portfolio .portfolio-v2 .title:hover {
-      cursor: pointer; }
+  .about .about_container .about-me {
+    display: flex;
+    gap: 50px; }
+    .about .about_container .about-me .title {
+      background: #1c352d;
+      border-style: solid;
+      border-width: 0 15px 15px 0;
+      border-color: #13251f;
+      box-shadow: 10px 10px 10px #bd484a;
+      height: 300px;
+      width: 400px;
+      flex-basis: 25%;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center; }
+      .about .about_container .about-me .title:hover {
+        cursor: pointer; }
+    .about .about_container .about-me .about__main {
+      flex-basis: 75%;
+      background: gray; }

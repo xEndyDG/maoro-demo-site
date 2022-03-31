@@ -11,9 +11,9 @@ echo "<div class='navigation' id='navigation'><ul>";
 foreach ($menuitems as $item) { //voor elk item uit de array $menuitems als $item
 
     if (isset($_GET['page']) && $item[0] == $_GET['page']) {
-        echo '<li class="stagger" ><a class="active" href="index.php?page=' . $item[0] . '">' . $item[1] . '</a></li>';
+        echo '<a class="active" href="index.php?page=' . $item[0] . '"><li class="stagger" >' . $item[1] . '</li></a>';
     } else {
-        echo '<a class="nav__item" href="index.php?page=' . $item[0] . '"><li class="stagger" >' . $item[1] . '</li></a>';
+        echo '<a href="index.php?page=' . $item[0] . '"><li class="stagger" >' . $item[1] . '</li></a>';
     }
 
 }   //class="'.$item[0].'"
