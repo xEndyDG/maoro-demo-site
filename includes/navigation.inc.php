@@ -13,21 +13,21 @@ foreach ($menuitems as $item) { //voor elk item uit de array $menuitems als $ite
     if (isset($_GET['page']) && $item[0] == $_GET['page']) {
         echo '<li class="stagger" ><a class="active" href="index.php?page=' . $item[0] . '">' . $item[1] . '</a></li>';
     } else {
-        echo '<li class="stagger" ><a class="nav__item" href="index.php?page=' . $item[0] . '">' . $item[1] . '</a></li>';
+        echo '<a class="nav__item" href="index.php?page=' . $item[0] . '"><li class="stagger" >' . $item[1] . '</li></a>';
     }
 
 }   //class="'.$item[0].'"
 echo '</ul>';
 ?>
 
-    <div class="navigation-icon">
-        <div class="menu-bar-container" onclick="toggleMenuIconState(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-
+<div class="navigation-icon">
+    <div class="menu-bar-container" onclick="toggleMenuIconState(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
     </div>
+
+</div>
 </div>
 
 
@@ -39,25 +39,13 @@ echo '</ul>';
         var stagElements = document.getElementsByClassName('stagger');
 
         for (let index = 0; index < stagElements.length; index++) {
-            (function(ind) {
-                setTimeout(function(){
+            (function (ind) {
+                setTimeout(function () {
 
                     stagElements[index].classList.toggle('stagger--active');
 
                 }, 0 + (75 * ind));
             })(index);
         }
-
-
-
-        // if (x.classList.toggle("change")){
-        //     console.log(true)
-        //     y.style.display = "block";
-        //     y.style.visibility = "visible";
-        // } else {
-        //     console.log(false)
-        //     y.style.visibility = "hidden";
-        //     y.style.display = "none";
-        // }
     }
 </script>

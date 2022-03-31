@@ -21,7 +21,6 @@ html, * {
 }
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -40,19 +39,10 @@ p, * {
   flex-direction: column;
 
   .content {
-    //optie 1
-    //background-image: linear-gradient(146deg, rgba(44, 35, 109, 0.5) 0%, rgba(44, 35, 109, 0.5) 14.286%,rgba(64, 54, 108, 0.5) 14.286%, rgba(64, 54, 108, 0.5) 28.572%,rgba(83, 72, 106, 0.5) 28.572%, rgba(83, 72, 106, 0.5) 42.858%,rgba(103, 91, 105, 0.5) 42.858%, rgba(103, 91, 105, 0.5) 57.144%,rgba(123, 110, 103, 0.5) 57.144%, rgba(123, 110, 103, 0.5) 71.43%,rgba(142, 128, 102, 0.5) 71.43%, rgba(142, 128, 102, 0.5) 85.716%,rgba(162, 147, 100, 0.5) 85.716%, rgba(162, 147, 100, 0.5) 100.002%),linear-gradient(349deg, rgb(203, 4, 7) 0%, rgb(203, 4, 7) 14.286%,rgb(178, 9, 6) 14.286%, rgb(178, 9, 6) 28.572%,rgb(152, 13, 5) 28.572%, rgb(152, 13, 5) 42.858%,rgb(127, 18, 4) 42.858%, rgb(127, 18, 4) 57.144%,rgb(101, 22, 3) 57.144%, rgb(101, 22, 3) 71.43%,rgb(76, 27, 2) 71.43%, rgb(76, 27, 2) 85.716%,rgb(50, 31, 1) 85.716%, rgb(50, 31, 1) 100.002%);
-
-    //optie 2
-    //background-image: linear-gradient(138deg, rgba(75, 171, 71, 0.5) 0%, rgba(75, 171, 71, 0.5) 14.286%,rgba(70, 150, 102, 0.5) 14.286%, rgba(70, 150, 102, 0.5) 28.572%,rgba(65, 129, 132, 0.5) 28.572%, rgba(65, 129, 132, 0.5) 42.858%,rgba(61, 109, 163, 0.5) 42.858%, rgba(61, 109, 163, 0.5) 57.144%,rgba(56, 88, 194, 0.5) 57.144%, rgba(56, 88, 194, 0.5) 71.43%,rgba(51, 67, 224, 0.5) 71.43%, rgba(51, 67, 224, 0.5) 85.716%,rgba(46, 46, 255, 0.5) 85.716%, rgba(46, 46, 255, 0.5) 100.002%),linear-gradient(338deg, rgb(97, 181, 68) 0%, rgb(97, 181, 68) 14.286%,rgb(81, 162, 76) 14.286%, rgb(81, 162, 76) 28.572%,rgb(65, 142, 83) 28.572%, rgb(65, 142, 83) 42.858%,rgb(49, 123, 91) 42.858%, rgb(49, 123, 91) 57.144%,rgb(33, 103, 99) 57.144%, rgb(33, 103, 99) 71.43%,rgb(17, 84, 106) 71.43%, rgb(17, 84, 106) 85.716%,rgb(1, 64, 114) 85.716%, rgb(1, 64, 114) 100.002%);
-
-    //optie 3
-    //background-image: radial-gradient(circle at center center, rgba(33,33,33,0),rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(56,56,56) 0px, rgb(56,56,56) 5px,transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
-
     //optie 4
     background-image: linear-gradient(267deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.42999999999999%, rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.71600000000001%, rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%), linear-gradient(404deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%, rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%, rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%, rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%), linear-gradient(270deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%, rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%, rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%, rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%), linear-gradient(384deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001000000000005%, rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.33500000000001%, rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%), linear-gradient(395deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%, rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%, rgba(68, 68, 68, 0.03) 50%, rgba(68, 68, 68, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 75%, rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%), linear-gradient(164deg, rgba(195, 195, 195, 0.03) 0%, rgba(195, 195, 195, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 50.001000000000005%, rgba(158, 158, 158, 0.03) 50.001%, rgba(158, 158, 158, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.33500000000001%, rgba(146, 146, 146, 0.03) 83.335%, rgba(146, 146, 146, 0.03) 100.002%), linear-gradient(335deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%, rgba(112, 112, 112, 0.03) 25%, rgba(112, 112, 112, 0.03) 50%, rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%, rgba(227, 227, 227, 0.03) 75%, rgba(227, 227, 227, 0.03) 100%), linear-gradient(157deg, hsl(98, 0%, 0%), hsl(98, 0%, 0%));
 
-
+    min-height: calc(100vh - 80px);
     //background: black;
     flex: 1 0 auto;
   }
@@ -61,6 +51,7 @@ p, * {
     width: 100%;
     bottom: 0;
     background: $darkergreen;
+
     .footer-container {
       display: flex;
       flex-wrap: wrap;
@@ -72,6 +63,7 @@ p, * {
         flex-basis: 100%;
         justify-content: center;
       }
+
       .footer-extra {
         width: 100%;
         display: flex;
@@ -84,6 +76,22 @@ p, * {
 
 .navigation {
   transition: all 1s;
+  text-align: center;
+  //justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  @keyframes input-shadow {
+    0% {
+      box-shadow: 10px 10px 10px $reder;
+    }
+    50% {
+      box-shadow: none;
+    }
+    100% {
+      box-shadow: 10px 10px 10px $reder;;
+    }
+  }
 
   ul {
     height: 0;
@@ -99,15 +107,21 @@ p, * {
     justify-content: center;
     padding: 0 3rem;
     margin: 0;
+    background: #00000090; //2 cijfer waarde na de hex == transperantie
+    width: 100%;
+    z-index: 2;
 
-    li {
+    a { //link styling
+      text-decoration: none;
+    }
+
+    li { //before
       padding: 1rem;
       margin: 10px 0 10px 0;
       transform: translateX(100%);
       transition: 500ms ease-in-out;
-      a {
-        text-decoration:none;
-      }
+
+
     }
   }
 
@@ -116,7 +130,8 @@ p, * {
     right: 0;
     top: 0;
     padding: .5rem 1rem;
-    background: gray;
+    //background: black;
+    z-index: 50;
 
     .menu-bar-container {
       display: inline-block;
@@ -125,32 +140,52 @@ p, * {
       .bar1, .bar2, .bar3 {
         width: 35px;
         height: 5px;
-        background-color: #333;
+        background-color: $cyan;
         margin: 6px 0;
         transition: 0.4s;
       }
+
+      //.bar1 {
+      //  background: $reder;
+      //}
+      //.bar2 {
+      //  background: $cyan;
+      //}
+      //.bar3 {
+      //  background: $darkgreen;
+      //}
     }
   }
 }
 
 .navigation--active {
   ul {
-    height: 300px;
+    height: 350px;
     visibility: visible;
     list-style-type: none;
+
+    a {
+      text-decoration: none;
+    }
 
     li.stagger {
       transform: translateX(100%);
       transition: 500ms ease-in-out;
-      background: gray;
-      a {
-        text-decoration:none;
+      background: $darkgreen;
+
+
+      &:hover {
+        -webkit-animation: input-shadow ease-in-out 1.5s infinite;
+        animation: input-shadow ease-in-out 1.5s infinite;
       }
+
     }
+
     li.stagger--active {
       transform: translateX(0);
+
       a {
-        text-decoration:none;
+        text-decoration: none;
       }
     }
   }
@@ -178,7 +213,9 @@ p, * {
 .home {
   .home__container {
     //colors n shit
-    background: greenyellow;
+    background: $darkgreen;
+    width: 100%;
+    height: 100%;
     border: 2px solid red;
 
     //margin, heigh, width, padding
@@ -203,135 +240,221 @@ p, * {
 
 .about {
   .about_container {
-    margin: 1.5rem;
-
-    .about__main { //waar alle content in staat
+    .portfolio {
+      height: 100%;
       display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      gap: 50px;
+      //justify-content: center;
+      //text-align: center;
+      flex-direction: column;
+      margin: 3rem;
+      padding: 2rem;
 
-      aside.sidebar {
-        width: 250px;
+      .portfolio-v1 {
+        display: flex;
+        gap: 50px;
+        .title {
+          background: $darkgreen;
+          border-style: solid;
+          border-width: 0 15px 15px 0;
+          border-color: $darkergreen;
+          box-shadow: 10px 10px 10px $reder;
+          height: 300px;
+          width: 400px;
 
-        .persoonlijke_informatie {
-          position: relative;
+          flex-basis: 25%;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
 
-          h2 {
-            font-size: 28px;
-          }
-
-          img {
-            object-fit: cover;
-            width: 100%;
-            height: auto;
-            border: 1px solid $red;
+          &:hover {
+            cursor: pointer;
           }
         }
+        .about__main {
+          flex-basis: 75%;
 
-        .competenties {
-          padding: 1rem;
+          transition: all 1s ease-in-out;
+          height: 0;
+          opacity: 0;
+          overflow: hidden; //? als dit visibilty is fucked het de footer? how to fix lol
 
           display: flex;
           flex-wrap: wrap;
+          flex-direction: row;
           gap: 50px;
 
-          //verander item naar skill?
-          .competenties-item, .competenties-interesse {
-            background: $darkgreen;
-            border-style: solid;
-            border-width: 0 15px 15px 0;
-            border-color: $darkergreen;
-            box-shadow: 10px 10px 10px $reder;
-            flex-basis: 100%;
+          aside.sidebar {
+            width: 250px;
 
-            h2 {
-              text-align: center;
+            .persoonlijke_informatie {
+              position: relative;
+
+              h2 {
+                font-size: 28px;
+              }
+
+              img {
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+                border: 1px solid $red;
+              }
             }
-            p {
-              padding: 0 0 0 8px;
+
+            .competenties { //De flexbox die alle items bezit
+              padding: 1rem;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 50px;
+
+
+              .competentie { //individuele items
+                background: $darkgreen;
+                border-style: solid;
+                border-width: 0 15px 15px 0;
+                border-color: $darkergreen;
+                box-shadow: 10px 10px 10px $reder;
+                flex-basis: 100%;
+
+
+                p {
+                  text-align: center;
+                  //padding: 0;
+                  margin: 0;
+                }
+
+                h1 {
+                  padding: 10px 0 0 0;
+                  text-align: center;
+                  margin: 0;
+                }
+              }
             }
           }
+
+          .main__content {
+            width: calc(100% - 300px);
+
+            .title {
+              justify-content: center;
+              text-align: center;
+              padding: 1rem;
+              background: $darkgreen;
+
+              border-style: solid;
+              border-width: 2px 15px 15px 0;
+              border-color: $darkergreen;
+              margin: 0 0 20px 0;
+              box-shadow: 10px 10px 10px $reder;
+
+              h1 {
+                font-size: 56px;
+              }
+            }
+
+            .main-content-box {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 50px; //mierenneuk gedrag >:(
+
+              .main-item-1 {
+                display: flex;
+                flex-wrap: wrap;
+
+                gap: 75px;
+
+                .main-item-title-container {
+                  display: flex;
+                  justify-content: space-between;
+                  margin: 0 5px 0 5px;
+
+                  .main-item-1-title {
+                    text-align: center;
+                    padding: 1rem;
+                    background: $darkgreen;
+                    border-style: solid;
+                    border-width: 0 15px 15px 0;
+                    border-color: $darkergreen;
+                    box-shadow: 10px 10px 10px $reder;
+                    margin: 50px 0 50px 0;
+                    flex-basis: 45%;
+                  }
+                }
+
+                .main-item-1-content {
+                  padding: 1rem;
+                  background: $darkgreen;
+                  border-style: solid;
+                  border-width: 0 15px 15px 0;
+                  border-color: $darkergreen;
+                  box-shadow: 10px 10px 10px $reder;
+                  //margin: 0px 0 50px 0; //margin tussen de 'projecten'
+                  flex-basis: 100%;
+                  margin: 0 5px 0 5px;
+
+                }
+              }
+
+              .main-item-2 {
+                display: flex;
+                gap: 50px;
+                justify-content: space-between;
+                width: 100%;
+
+                .main-item-2-content {
+                  margin: 0 5px 5px 5px;
+                  width: 100%;
+                  transition: all 300ms ease-in-out;
+                  text-align: center;
+                  background: $darkgreen;
+                  border-style: solid;
+                  border-width: 0 20px 20px 0;
+                  border-color: $darkergreen;
+                  box-shadow: 10px 10px 10px $reder;
+                }
+
+                .animate {
+                  transform: scale(1.3);
+
+                }
+
+                //&:hover { //on hover add a border????
+                //  transform: scale(1.3);
+                //}
+              }
+            }
+
+          }
+        }
+
+        .visible {
+          height: 2000px;
+          //aanpassen op basis van
+          // content lengte of anders met javascript berekenen
+          // op pagina laad en dan hier in zetten
+          visibility: visible;
+          opacity: 1;
         }
       }
 
-      .main__content {
-        width: calc(100% - 300px);
-
+      .portfolio-v2 {
         .title {
-          justify-content: center;
-          text-align: center;
-          padding: 1rem;
           background: $darkgreen;
-
           border-style: solid;
-          border-width: 2px 15px 15px 0;
+          border-width: 0 15px 15px 0;
           border-color: $darkergreen;
-          margin: 0 0 20px 0;
           box-shadow: 10px 10px 10px $reder;
+          //flex-basis: 100%;
+          height: 300px;
+          width: 400px;
 
-
-          h1 {
-            font-size: 56px;
+          &:hover {
+            cursor: pointer;
           }
         }
-
-        .main-content-box {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 25px;  //mierenneuk gedrag >:(
-
-          .main-item-1 {
-            display: flex;
-            flex-wrap: wrap;
-
-            .main-item-1-title {
-              text-align: center;
-              padding: 1rem;
-              background: $darkgreen;
-              border-style: solid;
-              border-width: 0 15px 15px 0;
-              border-color: $darkergreen;
-              box-shadow: 10px 10px 10px $reder;
-              margin: 50px 0 50px 0;
-              flex-basis: 100%;
-            }
-
-            .main-item-1-content {
-              padding: 1rem;
-              background: $darkgreen;
-              border-style: solid;
-              border-width: 0 15px 15px 0;
-              border-color: $darkergreen;
-              box-shadow: 10px 10px 10px $reder;
-              margin: 0px 0 50px 0; //margin tussen de 'projecten'
-              flex-basis: 100%;
-            }
-          }
-
-          .main-item-2, .main-item-3, .main-item-4, .main-item-5 {
-            width: calc(50% - 12.5px);
-            transition: 1s ease-in-out;
-            text-align: center;
-
-            margin-bottom: 100px;
-
-            background: $darkgreen;
-            border-style: solid;
-            border-width: 0 20px 20px 0;
-            border-color: $darkergreen;
-            box-shadow: 10px 10px 10px $reder;
-
-
-            //&:hover { //on hover add a border????
-            //  transform: scale(1.3);
-            //}
-          }
-        }
-
       }
-    }
 
+    }
   }
 }
 

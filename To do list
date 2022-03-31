@@ -8,15 +8,17 @@ Home page
 
 
 About page
-    -Nieuwe header
-    -Alle blokken vullen met oprechte informatie
+    -Nieuwe header      DONE    (nu nog animaties fixen)
+    -Alle blokken vullen met oprechte informatie    CURRENT
     -Projecten afstand en opvulling verbeteren
     -Text opmaak verbeteren
     -Animaties toevoegen aan elk element
 
 Navigatie
     -Styling toevoegen aan UL en Li
-    -Achtergrond blur wanneer de dropdown tervoorschijn komt
+        *Zorg ervoor dat de drop down een kwart van de site bedekt met een black / achtergrond waar de li items center naartoe zweven
+
+    -Achtergrond blur wanneer de dropdown tevoorschijn komt
     -Sub mappen binnen de include folder (bijv map: projecten   inhoudt: project1.inc.php, project2.inc.php)
     -Animaties verfijnen
 
