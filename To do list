@@ -28,6 +28,9 @@ Home page
 OLD IDEA
 
 
+General:
+    -Fix scrollbar, maak het hidden zonder de overflow aan te passen
+
 About page
     -Projecten afstand en opvulling verbeteren
     -Text opmaak verbeteren
@@ -39,7 +42,7 @@ Navigatie
 
 Footer
     -Opvullen met random blokken / circles / driehoeken die rond spinnen en de wegvagen
-    -On hover van de link, scale vergroten en informatie over link duidelijk maken
+    -On hover van de link, scale vergroten en informatie over link duidelijk maken          basically title toevoegen aan link
     -Algemene styling van text en elementen
     -Fixed hoogte geven
 

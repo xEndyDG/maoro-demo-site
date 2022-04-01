@@ -8,8 +8,18 @@
             <h2><a href="https://open.spotify.com/show/0pV3t8VIUDbV5xCj2U76HH?si=fa56298089fe4248">Podcast</a></h2>
         </div>
         <div class="footer-extra">
-            <p><i>Hier iets toekomstelijks copyright ofzo. </i></p>
-            <p><a href="">Found a bug / mistake / error? tell me!</a></p>
+            <p><i>Hier iets toekomstelijks copyright ofzo. </i></p><br><br>
+            <p><a href="">Found a bug / mistake / error? tell me!</a></p><br><br>
+
+
         </div>
     </div>
 </section>
+
+
+<!--<section class="footer">-->
+<!--    <div class="footer-container">-->
+<!--        <div class="footer-contact">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->

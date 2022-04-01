@@ -50,11 +50,6 @@
                             <p>Skill level for javascript:</p>
                             <p><strong>Beginner</strong></p>
                         </div>
-                        <!--                                <div class="competentie coderen">-->
-                        <!--                                    <h1>python</h1>-->
-                        <!--                                    <p>Skill level for python:</p>-->
-                        <!--                                    <p><strong>Intermediate</strong></p>-->
-                        <!--                                </div>-->
                     </div>
                 </aside>
                 <div class="main__content">
@@ -208,7 +203,6 @@
                 </div>
             </div>
         </div>
-
         <!--        item 2-->
         <div class="about-me">
             <!--            item 2 title-->
@@ -340,25 +334,9 @@
 </section>
 
 <script>
-    document.onload =
-    function temp () {
-        var temp = document.getElementsByClassName('portfolio-v1-main');
-        let box = document.querySelector('.portfolio-v1-main');
-        var y = document.getElementById('top portfolio-v1');
-        let width = y.offsetWidth;
-        let OriginHeight = y.offsetHeight;
-        console.log({width, OriginHeight});
-        y.style.height = OriginHeight - OriginHeight;
-    }
-
-
     function expandContract(x) {
         //zorg ervoor dat het element wat geclickt wordt het bijbehorende content vlak opent
         var y = document.getElementById('top portfolio-v1');
-
-        if (y.offsetHeight <= 0) {
-            y.style.height = yHeigh;
-        }
         console.log(y);
         y.classList.toggle("visible")
         console.log('toggle triggerd')
