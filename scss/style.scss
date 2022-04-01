@@ -45,16 +45,12 @@ p, * {
 .container {
   display: flex;
   flex-direction: column;
-  //scrollbar-width: none;
-  //overflow-y: scroll;
-
 
   .content {
-    //optie 4
-    background-image: linear-gradient(267deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.42999999999999%, rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.71600000000001%, rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%), linear-gradient(404deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%, rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%, rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%, rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%), linear-gradient(270deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%, rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%, rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%, rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%), linear-gradient(384deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001000000000005%, rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.33500000000001%, rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%), linear-gradient(395deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%, rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%, rgba(68, 68, 68, 0.03) 50%, rgba(68, 68, 68, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 75%, rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%), linear-gradient(164deg, rgba(195, 195, 195, 0.03) 0%, rgba(195, 195, 195, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 50.001000000000005%, rgba(158, 158, 158, 0.03) 50.001%, rgba(158, 158, 158, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.33500000000001%, rgba(146, 146, 146, 0.03) 83.335%, rgba(146, 146, 146, 0.03) 100.002%), linear-gradient(335deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%, rgba(112, 112, 112, 0.03) 25%, rgba(112, 112, 112, 0.03) 50%, rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%, rgba(227, 227, 227, 0.03) 75%, rgba(227, 227, 227, 0.03) 100%), linear-gradient(157deg, hsl(98, 0%, 0%), hsl(98, 0%, 0%));
+    //background-image: linear-gradient(267deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.42999999999999%, rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.71600000000001%, rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%), linear-gradient(404deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%, rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%, rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%, rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%), linear-gradient(270deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%, rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%, rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%, rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%), linear-gradient(384deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001000000000005%, rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.33500000000001%, rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%), linear-gradient(395deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%, rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%, rgba(68, 68, 68, 0.03) 50%, rgba(68, 68, 68, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 75%, rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%), linear-gradient(164deg, rgba(195, 195, 195, 0.03) 0%, rgba(195, 195, 195, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 50.001000000000005%, rgba(158, 158, 158, 0.03) 50.001%, rgba(158, 158, 158, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.33500000000001%, rgba(146, 146, 146, 0.03) 83.335%, rgba(146, 146, 146, 0.03) 100.002%), linear-gradient(335deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%, rgba(112, 112, 112, 0.03) 25%, rgba(112, 112, 112, 0.03) 50%, rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%, rgba(227, 227, 227, 0.03) 75%, rgba(227, 227, 227, 0.03) 100%), linear-gradient(157deg, hsl(98, 0%, 0%), hsl(98, 0%, 0%));
 
     min-height: calc(100vh - 80px);
-    //background: black;
+    background: black;
     flex: 1 0 auto;
   }
 
@@ -62,26 +58,96 @@ p, * {
     width: 100%;
     bottom: 0;
     background: $darkergreen;
+    //position: fixed;
+
+
+    .nav-container {
+      position: relative;
+      .nav {
+        font-family: 'Titillium Web';
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .nav * {
+        box-sizing: border-box;
+        transition: all .35s ease;
+      }
+
+      .nav li {
+        display: inline-block;
+        list-style: outside none none;
+        margin: 1rem;     //waarom werkt het zonder dit niet??      //if it ain't broke don't fix it <3
+        padding: 0;
+      }
+
+      .nav a {
+        padding: .5em .8em;
+        color: rgba(255, 255, 255, .5);
+        position: relative;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      .nav a::before,
+      .nav a::after {
+        content: '';
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        transition: all .35s ease;
+        opacity: 0;
+      }
+
+      .nav a::before {
+        content: '';
+        right: 0;
+        top: 0;
+        border-top: 3px solid $red;
+        border-right: 3px solid $reder;
+        transform: translate(-100%, 50%);
+      }
+
+      .nav a:after {
+        content: '';
+        left: 0;
+        bottom: 0;
+        border-bottom: 3px solid $red;
+        border-left: 3px solid $reder;
+        transform: translate(100%, -50%)
+      }
+
+      .nav a:hover:before,
+      .nav a:hover:after {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+
+      .nav a:hover {
+        color: $reder;
+      }
+    }
 
     .footer-container {
       display: flex;
       flex-wrap: wrap;
       text-align: center;
+      height: 100%;
 
       .footer-contact {
         display: flex;
         gap: 50px;
         flex-basis: 100%;
         justify-content: center;
-
       }
 
-      .footer-extra {
-        width: 100%;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-      }
+      //.footer-extra {
+      //  width: 100%;
+      //  display: flex;
+      //  text-align: center;
+      //  justify-content: center;
+      //}
     }
   }
 }
@@ -240,44 +306,105 @@ p, * {
 
 //content pages
 .home {
-  .home-container {
-    overflow: auto;
+  @keyframes flicker {
 
-    background: $darkgreen;
-    width: 100%;
-    height: 500px;
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+      text-shadow: -0.2rem -0.2rem 1rem $darkergreen,
+      0.2rem 0.2rem 1rem $darkergreen,
+      0 0 2rem $darkergreen,
+      0 0 4rem $darkergreen,
+      0 0 6rem $darkergreen,
+      0 0 8rem $darkergreen,
+      0 0 10rem $darkergreen;
+
+      box-shadow: 0 0 .5rem $darkergreen,
+      inset 0 0 .5rem $darkergreen,
+      0 0 2rem $darkergreen,
+      inset 0 0 2rem $darkergreen,
+      0 0 4rem $darkergreen,
+      inset 0 0 4rem $darkergreen;
+    }
+
+    20%, 24%, 55% {
+      text-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  .home-container {
+    border: 2px solid $darkgreen;
+    box-shadow: 10px 10px 10px $darkergreen, 10px 10px 10px $darkergreen;
+    animation: flicker 5s infinite alternate;
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    .home-title {
+      margin: 2rem;
+      flex-basis: 100%;
+      border: 1px solid $red;
+      justify-content: center;
+      text-align: center;
+    }
+
 
     .home-content {
+      margin: 2rem;
+
       display: flex;
-      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: space-around;
+
+      //justify-content: center;
       align-items: center;
 
 
-      a {
-        position: relative;
-        display: inline-block;
-        padding: 15px 30px;
-        border: 2px solid #111;
-        text-transform: uppercase;
-        color: #111;
-        font-weight: 600;
-        font-size: 20px;
-      }
+      .home-content-blok {
+        flex-basis: calc(50% - 1rem);
+        //margin: 25px;
 
-      a:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -2px;
-        width: calc(100% + 4px);
-        height: 100%;
-        background: #fff;
-      }
+        .folder { //een on hover toevoegen die de achtergrond naar rood veranderd (box-shadow) en het foldertje naar voder duwt (scale)   flikker animation??
+          width: 150px;
+          height: 105px;
+          margin: 0 auto;
+          margin-top: 50px;
+          position: relative;
+          background-color: $darkgreen;
+          border-radius: 0 6px 6px 6px;
+          box-shadow: 4px 4px 7px $darkergreen;
 
-      a span {
-        position: relative;
-        z-index: 3;
+          .folder-title {
+            font-weight: 1000;
+            //font-size: 15rem;
+            letter-spacing: 0.5rem;
+            //color: $red;
+            //text-shadow:
+            //3px 3px 3px $reder,
+            //1px 0 10px $reder,
+            //3px 3px $reder,
+            //3px 3px $red;
+            //5px 5px var(--c),
+            //1 0px 10px var(--c),
+            //15px 15px var(--c),
+            //20px 20px var(--c),
+            //40px 40px 15px var(--c);
+            padding: 1.75rem;
+          }
+        }
 
+        .folder:before {
+          content: '';
+          width: 50%;
+          height: 12px;
+          border-radius: 0 20px 0 0;
+          background-color: $darkgreen;
+          position: absolute;
+          top: -12px;
+          left: 0;
+        }
       }
     }
   }

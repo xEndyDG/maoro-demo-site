@@ -1,25 +1,15 @@
 <section class="footer">
     <div class="footer-container">
         <div class="footer-contact">
-            <h2><a href="https://maoro.nl">Website</a></h2>
-            <h2><a href="#">Linkedin</a></h2>
-            <h2><a href="https://github.com/xEndyDG">Github</a></h2>
-            <h2><a href="">Email</a></h2>
-            <h2><a href="https://open.spotify.com/show/0pV3t8VIUDbV5xCj2U76HH?si=fa56298089fe4248">Podcast</a></h2>
-        </div>
-        <div class="footer-extra">
-            <p><i>Hier iets toekomstelijks copyright ofzo. </i></p><br><br>
-            <p><a href="">Found a bug / mistake / error? tell me!</a></p><br><br>
-
-
+            <div class="nav-container">
+                <ul class="nav">
+                    <li><a href="https://maoro.nl">Website</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="https://github.com/xEndyDG">Github</a></li>
+                    <li><a href="">Email</a></li>
+                    <li><a href="https://open.spotify.com/show/0pV3t8VIUDbV5xCj2U76HH?si=fa56298089fe4248">Podcast</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
-
-
-<!--<section class="footer">-->
-<!--    <div class="footer-container">-->
-<!--        <div class="footer-contact">-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->

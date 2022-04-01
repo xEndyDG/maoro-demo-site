@@ -29,7 +29,7 @@ OLD IDEA
 
 
 General:
-    -Fix scrollbar, maak het hidden zonder de overflow aan te passen
+    -New background that works with neon colors
 
 About page
     -Projecten afstand en opvulling verbeteren
@@ -42,9 +42,9 @@ Navigatie
 
 Footer
     -Opvullen met random blokken / circles / driehoeken die rond spinnen en de wegvagen
+    -background ^
+
     -On hover van de link, scale vergroten en informatie over link duidelijk maken          basically title toevoegen aan link
-    -Algemene styling van text en elementen
-    -Fixed hoogte geven
 
 Archief
     -Pagina gesplits in 2 velden.

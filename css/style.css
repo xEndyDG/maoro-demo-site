@@ -22,26 +22,71 @@ p, * {
   display: flex;
   flex-direction: column; }
   .container .content {
-    background-image: linear-gradient(267deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%), linear-gradient(404deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%, rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%, rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%, rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%), linear-gradient(270deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%, rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%, rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%, rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%), linear-gradient(384deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%), linear-gradient(395deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%, rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%, rgba(68, 68, 68, 0.03) 50%, rgba(68, 68, 68, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 75%, rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%), linear-gradient(164deg, rgba(195, 195, 195, 0.03) 0%, rgba(195, 195, 195, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 50.001%, rgba(158, 158, 158, 0.03) 50.001%, rgba(158, 158, 158, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.335%, rgba(146, 146, 146, 0.03) 83.335%, rgba(146, 146, 146, 0.03) 100.002%), linear-gradient(335deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%, rgba(112, 112, 112, 0.03) 25%, rgba(112, 112, 112, 0.03) 50%, rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%, rgba(227, 227, 227, 0.03) 75%, rgba(227, 227, 227, 0.03) 100%), linear-gradient(157deg, black, black);
     min-height: calc(100vh - 80px);
+    background: black;
     flex: 1 0 auto; }
   .container .footer {
     width: 100%;
     bottom: 0;
     background: #13251f; }
+    .container .footer .nav-container {
+      position: relative; }
+      .container .footer .nav-container .nav {
+        font-family: 'Titillium Web';
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600; }
+      .container .footer .nav-container .nav * {
+        box-sizing: border-box;
+        transition: all .35s ease; }
+      .container .footer .nav-container .nav li {
+        display: inline-block;
+        list-style: outside none none;
+        margin: 1rem;
+        padding: 0; }
+      .container .footer .nav-container .nav a {
+        padding: .5em .8em;
+        color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        text-decoration: none;
+        font-size: 20px; }
+      .container .footer .nav-container .nav a::before,
+      .container .footer .nav-container .nav a::after {
+        content: '';
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        transition: all .35s ease;
+        opacity: 0; }
+      .container .footer .nav-container .nav a::before {
+        content: '';
+        right: 0;
+        top: 0;
+        border-top: 3px solid #f45e61;
+        border-right: 3px solid #bd484a;
+        transform: translate(-100%, 50%); }
+      .container .footer .nav-container .nav a:after {
+        content: '';
+        left: 0;
+        bottom: 0;
+        border-bottom: 3px solid #f45e61;
+        border-left: 3px solid #bd484a;
+        transform: translate(100%, -50%); }
+      .container .footer .nav-container .nav a:hover:before,
+      .container .footer .nav-container .nav a:hover:after {
+        transform: translate(0, 0);
+        opacity: 1; }
+      .container .footer .nav-container .nav a:hover {
+        color: #bd484a; }
     .container .footer .footer-container {
       display: flex;
       flex-wrap: wrap;
-      text-align: center; }
+      text-align: center;
+      height: 100%; }
       .container .footer .footer-container .footer-contact {
         display: flex;
         gap: 50px;
         flex-basis: 100%;
-        justify-content: center; }
-      .container .footer .footer-container .footer-extra {
-        width: 100%;
-        display: flex;
-        text-align: center;
         justify-content: center; }
 
 .navigation {
@@ -144,35 +189,58 @@ p, * {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px); }
 
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: -0.2rem -0.2rem 1rem #13251f, 0.2rem 0.2rem 1rem #13251f, 0 0 2rem #13251f, 0 0 4rem #13251f, 0 0 6rem #13251f, 0 0 8rem #13251f, 0 0 10rem #13251f;
+    box-shadow: 0 0 0.5rem #13251f, inset 0 0 0.5rem #13251f, 0 0 2rem #13251f, inset 0 0 2rem #13251f, 0 0 4rem #13251f, inset 0 0 4rem #13251f; }
+  20%, 24%, 55% {
+    text-shadow: none;
+    box-shadow: none; } }
+
 .home .home-container {
-  overflow: auto;
-  background: #1c352d;
-  width: 100%;
-  height: 500px; }
-  .home .home-container .home-content {
-    display: flex;
+  border: 2px solid #1c352d;
+  box-shadow: 10px 10px 10px #13251f, 10px 10px 10px #13251f;
+  animation: flicker 5s infinite alternate;
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap; }
+  .home .home-container .home-title {
+    margin: 2rem;
+    flex-basis: 100%;
+    border: 1px solid #f45e61;
     justify-content: center;
+    text-align: center; }
+  .home .home-container .home-content {
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-around;
     align-items: center; }
-    .home .home-container .home-content a {
-      position: relative;
-      display: inline-block;
-      padding: 15px 30px;
-      border: 2px solid #111;
-      text-transform: uppercase;
-      color: #111;
-      font-weight: 600;
-      font-size: 20px; }
-    .home .home-container .home-content a:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -2px;
-      width: calc(100% + 4px);
-      height: 100%;
-      background: #fff; }
-    .home .home-container .home-content a span {
-      position: relative;
-      z-index: 3; }
+    .home .home-container .home-content .home-content-blok {
+      flex-basis: calc(50% - 1rem); }
+      .home .home-container .home-content .home-content-blok .folder {
+        width: 150px;
+        height: 105px;
+        margin: 0 auto;
+        margin-top: 50px;
+        position: relative;
+        background-color: #1c352d;
+        border-radius: 0 6px 6px 6px;
+        box-shadow: 4px 4px 7px #13251f; }
+        .home .home-container .home-content .home-content-blok .folder .folder-title {
+          font-weight: 1000;
+          letter-spacing: 0.5rem;
+          padding: 1.75rem; }
+      .home .home-container .home-content .home-content-blok .folder:before {
+        content: '';
+        width: 50%;
+        height: 12px;
+        border-radius: 0 20px 0 0;
+        background-color: #1c352d;
+        position: absolute;
+        top: -12px;
+        left: 0; }
 
 .about .about_container {
   height: 100%;
