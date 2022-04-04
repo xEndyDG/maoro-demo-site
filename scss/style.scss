@@ -63,11 +63,13 @@ p, * {
 
     .nav-container {
       position: relative;
+
       .nav {
         font-family: 'Titillium Web';
         text-transform: uppercase;
         text-align: center;
         font-weight: 600;
+        padding-left: 0;
       }
 
       .nav * {
@@ -78,7 +80,7 @@ p, * {
       .nav li {
         display: inline-block;
         list-style: outside none none;
-        margin: 1rem;     //waarom werkt het zonder dit niet??      //if it ain't broke don't fix it <3
+        margin: 1rem; //waarom werkt het zonder dit niet??      //if it ain't broke don't fix it <3
         padding: 0;
       }
 
@@ -333,9 +335,9 @@ p, * {
   }
 
   .home-container {
-    border: 2px solid $darkgreen;
-    box-shadow: 10px 10px 10px $darkergreen, 10px 10px 10px $darkergreen;
-    animation: flicker 5s infinite alternate;
+    //border: 2px solid $darkgreen;
+    //box-shadow: 10px 10px 10px $darkergreen, 10px 10px 10px $darkergreen;
+    //animation: flicker 5s infinite alternate;
     margin: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -353,18 +355,56 @@ p, * {
     .home-content {
       margin: 2rem;
 
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
       justify-content: space-around;
 
-      //justify-content: center;
-      align-items: center;
+      .big-text {
+        h1 {
+          font-size: 56px;
+          font-weight: bold;
+        }
+
+        h2 {
+          font-size: 48px;
+          font-weight: bold;
+        }
+      }
+
+      .table-of-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        p {
+          margin: 0;
+          padding: 0;
+        }
+
+        .table-of-content-item {
+          display: flex;
+          flex-wrap: wrap;
+          height: 50px;
+          border-style: solid;
+          border-color: $red;
+          border-top: 0;
+          border-right: 0;
+          border-left: 0;
+          margin-bottom: 20px;
+
+          p {
+            padding: 5px;
+            width: 45%;
+          }
+        }
+      }
 
 
       .home-content-blok {
-        flex-basis: calc(50% - 1rem);
-        //margin: 25px;
+        flex-basis: calc(35% - 1rem);
+        border: 1px solid $red;
 
         .folder { //een on hover toevoegen die de achtergrond naar rood veranderd (box-shadow) en het foldertje naar voder duwt (scale)   flikker animation??
           width: 150px;
@@ -405,6 +445,10 @@ p, * {
           top: -12px;
           left: 0;
         }
+      }
+
+      .home-content-blok:first-child {
+        border: none;
       }
     }
   }

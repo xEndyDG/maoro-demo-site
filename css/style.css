@@ -35,7 +35,8 @@ p, * {
         font-family: 'Titillium Web';
         text-transform: uppercase;
         text-align: center;
-        font-weight: 600; }
+        font-weight: 600;
+        padding-left: 0; }
       .container .footer .nav-container .nav * {
         box-sizing: border-box;
         transition: all .35s ease; }
@@ -198,9 +199,6 @@ p, * {
     box-shadow: none; } }
 
 .home .home-container {
-  border: 2px solid #1c352d;
-  box-shadow: 10px 10px 10px #13251f, 10px 10px 10px #13251f;
-  animation: flicker 5s infinite alternate;
   margin: 2rem;
   display: flex;
   flex-wrap: wrap; }
@@ -212,13 +210,40 @@ p, * {
     text-align: center; }
   .home .home-container .home-content {
     margin: 2rem;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    justify-content: space-around;
-    align-items: center; }
+    justify-content: space-around; }
+    .home .home-container .home-content .big-text h1 {
+      font-size: 56px;
+      font-weight: bold; }
+    .home .home-container .home-content .big-text h2 {
+      font-size: 48px;
+      font-weight: bold; }
+    .home .home-container .home-content .table-of-content {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+      .home .home-container .home-content .table-of-content p {
+        margin: 0;
+        padding: 0; }
+      .home .home-container .home-content .table-of-content .table-of-content-item {
+        display: flex;
+        flex-wrap: wrap;
+        height: 50px;
+        border-style: solid;
+        border-color: #f45e61;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        margin-bottom: 20px; }
+        .home .home-container .home-content .table-of-content .table-of-content-item p {
+          padding: 5px;
+          width: 45%; }
     .home .home-container .home-content .home-content-blok {
-      flex-basis: calc(50% - 1rem); }
+      flex-basis: calc(35% - 1rem);
+      border: 1px solid #f45e61; }
       .home .home-container .home-content .home-content-blok .folder {
         width: 150px;
         height: 105px;
@@ -241,6 +266,8 @@ p, * {
         position: absolute;
         top: -12px;
         left: 0; }
+    .home .home-container .home-content .home-content-blok:first-child {
+      border: none; }
 
 .about .about_container {
   height: 100%;
