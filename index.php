@@ -16,7 +16,7 @@ if (isset($_GET["page"])) { //als de GET 'page' niet leeg is
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title>Maoro</title>
     <!--    link naar stylesheet-->
     <link rel="stylesheet" href="css/style.css">
     <!--    link naar javascript-->

@@ -341,27 +341,61 @@ p, * {
     margin: 2rem;
     display: flex;
     flex-wrap: wrap;
+    gap: 25rem;
 
+    .center-text {
+      text-align: center;
+    }
 
     .home-title {
       margin: 2rem;
-      flex-basis: 100%;
-      border: 1px solid $red;
-      justify-content: center;
-      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      .home-title-title {
+        text-align: center;
+        flex-basis: 100%;
+        margin: 1rem;
+        border: 1px solid $red;
+      }
+
+      .home-title-content {
+        flex-basis: 50%;
+        position: relative;
+        display: flex;
+        border: 1px solid $red;
+        justify-content: center;
+
+        img {
+          object-fit: cover;
+          max-width: 80%;
+        }
+
+        .home-title-content-child {
+          justify-content: center;
+          align-self: center;
+          flex-basis: 70%;
+          text-align: center;
+          p {
+            font-size: 16px;
+          }
+        }
+      }
     }
 
 
     .home-content {
       margin: 2rem;
-
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
+      gap: 3rem;
       justify-content: space-around;
 
       .big-text {
+        flex-basis: 40%;
+
         h1 {
           font-size: 56px;
           font-weight: bold;
@@ -377,6 +411,9 @@ p, * {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        a {
+          text-decoration: none;
+        }
 
         p {
           margin: 0;
@@ -401,10 +438,17 @@ p, * {
         }
       }
 
+      .home-content-title {
+        flex-basis: 100%;
+        border: 1px solid $reder;
+      }
 
       .home-content-blok {
-        flex-basis: calc(35% - 1rem);
+        margin: 0 0 10rem 0;
+        flex-basis: calc(75% - 1rem);
         border: 1px solid $red;
+        text-align: left;
+        padding: 10px 15px 10px 15px;
 
         .folder { //een on hover toevoegen die de achtergrond naar rood veranderd (box-shadow) en het foldertje naar voder duwt (scale)   flikker animation??
           width: 150px;
@@ -447,8 +491,9 @@ p, * {
         }
       }
 
-      .home-content-blok:first-child {
-        border: none;
+      .home-content-blok:nth-child(even) {
+        margin-left: auto;
+        text-align: right;
       }
     }
   }
