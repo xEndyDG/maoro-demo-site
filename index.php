@@ -4,10 +4,12 @@ if (isset($_GET["page"])) { //als de GET 'page' niet leeg is
     if ($_GET['page'] == 'logout') {    //als de GET 'page' gelijk is aan uitloggen
         header('Location: php/logout.php'); //ga naar
         exit();
+    } elseif (!file_exists('includes/' . $_GET['page'] . '.inc.php')) { //als de $_GET['page'] niet leeg is maar gevuld is met een url wat niet klopt
+        $page = '404';
     } else {    //anders ga naar $page
         $page = $_GET['page'];
     }
-} else {    //anders ga naar home
+} else {
     $page = 'home';
 }
 ?>
@@ -16,7 +18,7 @@ if (isset($_GET["page"])) { //als de GET 'page' niet leeg is
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Maoro</title>
+    <title>Maoro's site</title>
     <!--    link naar stylesheet-->
     <link rel="stylesheet" href="css/style.css">
     <!--    link naar javascript-->

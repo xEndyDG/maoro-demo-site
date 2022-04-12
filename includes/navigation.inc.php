@@ -1,9 +1,9 @@
 <?php
 $menuitems = [
     ['home', 'home'], //positie 0 = url, 1 = naam
-    ['about', 'about'],
-    ['archive', 'archive'],
-    ['speeltuin', 'speeltuin'],
+    ['introduction', 'introduction'],
+    ['portfolio', 'portfolio'],
+    ['projects', 'projects'],
 ];
 
 
