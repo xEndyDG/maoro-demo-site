@@ -53,19 +53,19 @@
                     <a href="#section-03">
                         <div class="table-of-content-item">
                             <p>03</p>
-                            <p>temp</p>
+                            <p>-</p>
                         </div>
                     </a>
                     <a href="#section-04">
                         <div class="table-of-content-item">
                             <p>04</p>
-                            <p>temp</p>
+                            <p>Hotdog</p>
                         </div>
                     </a>
                     <a href="#section-05">
                         <div class="table-of-content-item">
                             <p>05</p>
-                            <p>temp</p>
+                            <p>-</p>
                         </div>
                     </a>
                 </div>
@@ -74,7 +74,8 @@
 
         <div class="home-content">
             <div class="home-content-title" id="section-02">
-                01
+                02
+
             </div>
 
             <!--            Een neon slang wat door de code blok elementen heen loopt op een timer. Zodra het 100% berijkt heeft kippert-->
@@ -99,64 +100,53 @@
 
 
             <!--            elk content blok gaat over iets wat me interesseert-->
-            <div class="home-content-blok">
-                <h2>Hier iets!</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, atque, delectus deleniti dicta eius
-                    fuga ipsam iure, molestiae odio omnis praesentium quis unde vero. Eius eligendi enim eveniet
-                    suscipit velit.
-                </p>
-            </div>
-            <div class="home-content-blok">
-                <h2>Hier iets!</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, atque, delectus deleniti dicta eius
-                    fuga ipsam iure, molestiae odio omnis praesentium quis unde vero. Eius eligendi enim eveniet
-                    suscipit velit.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, atque, delectus deleniti dicta eius
-                    fuga ipsam iure, molestiae odio omnis praesentium quis unde vero. Eius eligendi enim eveniet
-                    suscipit velit.
-                </p>
-            </div>
-            <div class="home-content-blok">
-                <h2>Hier iets!</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, atque, delectus deleniti dicta eius
-                    fuga ipsam iure, molestiae odio omnis praesentium quis unde vero. Eius eligendi enim eveniet
-                    suscipit velit.
-                </p>
-            </div>
-            <div class="home-content-blok">
-                <h2>Hier iets!</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, atque, delectus deleniti dicta eius
-                    fuga ipsam iure, molestiae odio omnis praesentium quis unde vero. Eius eligendi enim eveniet
-                    suscipit velit.
-                </p>
-            </div>
-            <!--            <div class="home-content-blok">-->
-            <!--                <h2>Hier iets!</h2>-->
-            <!--                <div class="folder">-->
-            <!--                    <div class="folder-title">-->
-            <!--                        Project hub-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
+
+
+<!--            burger???-->
+<!--            neon burger-->
+
         </div>
+
         <div class="home-content">
             <div class="home-content-title" id="section-03">
-                02
-            </div>
-        </div>
-        <div class="home-content">
-            <div class="home-content-title" id="section-04">
                 03
             </div>
         </div>
         <div class="home-content">
-            <div class="home-content-title" id="section-05">
+            <div class="home-content-title" id="section-04">
                 04
             </div>
+        </div>
+        <div class="home-content">
+            <div class="home-content-title" id="section-05">
+                05
+            </div>
+            <div class="home-content-hotdog">
+                <div class="home-content-blok">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="home-content-blok">
+                    <h2>Hier iets!</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, atque, delectus deleniti dicta eius
+                        fuga ipsam iure, molestiae odio omnis praesentium quis unde vero. Eius eligendi enim eveniet
+                        suscipit velit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, atque, delectus deleniti dicta eius
+                        fuga ipsam iure, molestiae odio omnis praesentium quis unde vero. Eius eligendi enim eveniet
+                        suscipit velit.
+                    </p>
+                </div>
+                <div class="home-content-blok">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
         </div>
         <div class="home-content">
             <a href="#table-of-content">

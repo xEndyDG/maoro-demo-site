@@ -333,6 +333,32 @@ p, * {
       box-shadow: none;
     }
   }
+  @keyframes flicker-hotdog {
+
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+      text-shadow: -0.2rem -0.2rem 1rem #A3361B,
+      0.2rem 0.2rem 1rem #A3361B,
+      0 0 2rem #A3361B,
+      0 0 4rem #A3361B,
+      0 0 6rem #A3361B,
+      0 0 8rem #A3361B,
+      0 0 10rem #A3361B;
+
+      box-shadow: 0 0 .5rem #A3361B,
+      inset 0 0 .5rem #A3361B,
+      0 0 2rem #A3361B,
+      inset 0 0 2rem #A3361B,
+      0 0 4rem #A3361B,
+      inset 0 0 4rem #A3361B;
+    }
+
+    20%, 24%, 55% {
+      text-shadow: none;
+      box-shadow: none;
+    }
+  }
+
 
   .home-container {
     //border: 2px solid $darkgreen;
@@ -377,6 +403,7 @@ p, * {
           align-self: center;
           flex-basis: 70%;
           text-align: center;
+
           p {
             font-size: 16px;
           }
@@ -386,11 +413,11 @@ p, * {
 
 
     .home-content {
-      margin: 2rem;
+      //margin: 2rem;
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      gap: 3rem;
+      gap: 1rem;
       justify-content: space-around;
 
       .big-text {
@@ -411,6 +438,7 @@ p, * {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+
         a {
           text-decoration: none;
         }
@@ -439,15 +467,13 @@ p, * {
       }
 
       .home-content-title {
-        flex-basis: 100%;
+        flex-basis: 50%;
+        justify-self: center;
         border: 1px solid $reder;
       }
 
       .home-content-blok {
-        margin: 0 0 10rem 0;
         flex-basis: calc(75% - 1rem);
-        border: 1px solid $red;
-        text-align: left;
         padding: 10px 15px 10px 15px;
 
         .folder { //een on hover toevoegen die de achtergrond naar rood veranderd (box-shadow) en het foldertje naar voder duwt (scale)   flikker animation??
@@ -491,9 +517,38 @@ p, * {
         }
       }
 
-      .home-content-blok:nth-child(even) {
-        margin-left: auto;
-        text-align: right;
+      .home-content-hotdog {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-around;
+
+        .home-content-blok {
+          flex-basis: calc(75% - 1rem);
+          //padding: 10px 15px 10px 15px;
+          justify-self: center;
+          //padding: 10px;
+        }
+
+        .home-content-blok:first-child {
+          border-top-left-radius: 100px;
+          border-top-right-radius: 100px;
+          border: 1px solid $red;
+        }
+
+        .home-content-blok:nth-child(2) {
+          flex-basis: 70%;
+          border-radius: 50px;
+          border: none;
+          animation: flicker-hotdog 5s infinite alternate;
+        }
+
+        .home-content-blok:last-child {
+          border: 1px solid $red;
+          border-bottom-left-radius: 100px;
+          border-bottom-right-radius: 100px;
+        }
       }
     }
   }
