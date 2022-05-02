@@ -65,7 +65,7 @@ p, * {
   .footer {
     width: 100%;
     bottom: 0;
-    background: $darkergreen;
+    //background: $red;
     position: fixed;
 
     .nav-container {
@@ -182,7 +182,8 @@ p, * {
     justify-content: center;
     padding: 0 3rem;
     margin: 0;
-    background: #00000090; //2 cijfer waarde na de hex == transperantie
+
+  ; //2 cijfer waarde na de hex == transperantie
     width: 100%;
     z-index: 2;
 
@@ -324,7 +325,13 @@ p, * {
       margin-top: 20%;
       min-height: 500px;
       min-width: 100%;
-      border: 1px solid $red;
+      gap: 2.5rem;
+
+      a {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+      }
 
       .home-container-info-content {
         text-align: center;
@@ -332,15 +339,14 @@ p, * {
         flex-direction: column;
         flex-wrap: wrap;
         gap: 1rem;
-        //height: 100%;
+
+
         .home-container-info-content-part-1 {
-          //background: gray;
           flex-basis: 25%;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          //margin: 20px;
 
           .tiny-text {
             margin: 0;
@@ -370,30 +376,26 @@ p, * {
             background: $red;
             box-shadow: 0 0 20px $red;
           }
-
-          //a {
-          //  text-decoration: none;
-          //  border: 1px solid $red;
-          //  padding: 10px 20px 10px 20px;
-          //}
         }
         .home-container-info-content-part-2 {
           //background: darkgray;
           flex-basis: 70%;
+          width: 65%;
+          align-self: center;
         }
       }
 
         .home-container-info-content:first-child {
           //background: $darkgreen;
-          flex-basis: 30%;
+          flex-basis: 35%;
         }
         .home-container-info-content:nth-child(2) {
           //background: $orange;
-          flex-basis: 30%;
+          flex-basis: 25%;
         }
         .home-container-info-content:last-child {
           //background: $reder;
-          flex-basis: 30%;
+          flex-basis: 35%;
       }
     }
   }
