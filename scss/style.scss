@@ -314,6 +314,72 @@ p, * {
   }
 }
 
+
+section.introduction {
+  .introduction__wrapper {
+    background: gray;
+    margin: 50px; //optioneel?
+    .introduction__head {
+      text-align: center;
+      background: #60daaa;
+    }
+
+    .introduction__content {
+      padding: 50px;
+      .introduction__section {
+        display: none;
+
+        //na de active
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+        gap: 34px;
+
+        .introduction-item {
+
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+
+          background: #6666ff;
+        }
+      }
+
+      .about-me {
+        background: darkslategray;
+      }
+
+
+
+      .introduction__error {
+        display: none;
+        justify-content: center;
+        align-content: center;
+
+        .introduction-error {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+        }
+      }
+
+      .active {
+        display: flex;
+      }
+    }
+  }
+}
+
+
+
 .home {
   .home-container {
     margin: 5rem;
@@ -630,6 +696,53 @@ p, * {
 
   }
 }
+
+
+
+.projecten {
+  h1:hover {
+    text-shadow: 0.04em 0.04em #fc0049,
+    0.08em 0.08em #fe8f01,
+    0.12em 0.12em #fdf21f,
+    0.16em 0.16em #3fdf4b,
+    0.2em 0.2em #3462fe;
+  }
+  #shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    //border: 3px solid;
+  }
+
+  .rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+    animation: colorRotate .5s linear 0s infinite;
+  }
+
+  @keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
+}
+
 
 
 

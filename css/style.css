@@ -189,6 +189,45 @@ p, * {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px); }
 
+section.introduction .introduction__wrapper {
+  background: gray;
+  margin: 50px; }
+  section.introduction .introduction__wrapper .introduction__head {
+    text-align: center;
+    background: #60daaa; }
+  section.introduction .introduction__wrapper .introduction__content {
+    padding: 50px; }
+    section.introduction .introduction__wrapper .introduction__content .introduction__section {
+      display: none;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 50px;
+      gap: 34px; }
+      section.introduction .introduction__wrapper .introduction__content .introduction__section .introduction-item {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: #6666ff; }
+    section.introduction .introduction__wrapper .introduction__content .about-me {
+      background: darkslategray; }
+    section.introduction .introduction__wrapper .introduction__content .introduction__error {
+      display: none;
+      justify-content: center;
+      align-content: center; }
+      section.introduction .introduction__wrapper .introduction__content .introduction__error .introduction-error {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column; }
+    section.introduction .introduction__wrapper .introduction__content .active {
+      display: flex; }
+
 .home .home-container {
   margin: 5rem;
   position: relative; }
@@ -399,3 +438,32 @@ p, * {
     .about .about_container .about-me .about__main {
       flex-basis: 75%;
       background: gray; }
+
+.projecten h1:hover {
+  text-shadow: 0.04em 0.04em #fc0049, 0.08em 0.08em #fe8f01, 0.12em 0.12em #fdf21f, 0.16em 0.16em #3fdf4b, 0.2em 0.2em #3462fe; }
+
+.projecten #shadowBox {
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Black w/opacity/see-through */ }
+
+.projecten .rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
+  font-family: monospace;
+  letter-spacing: 5px;
+  animation: colorRotate .5s linear 0s infinite; }
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff; }
+  10% {
+    color: #0099ff; }
+  50% {
+    color: #00ff00; }
+  75% {
+    color: #ff3399; }
+  100% {
+    color: #6666ff; } }
