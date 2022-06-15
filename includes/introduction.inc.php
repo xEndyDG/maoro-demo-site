@@ -8,6 +8,7 @@
                     <p id="introduction-folder-name">Intro</p>
                 </div>
 
+                <!--                title's         -->
                 <div class="flex-container-dubble-item introduction-title"
                      style="margin-top: 25px;">
                     <p id="introduction-title">Intro</p>
@@ -15,7 +16,17 @@
                 <div class="flex-container-dubble-item introduction-title">
                     <p id="introduction-title">About me</p>
                 </div>
+                <div class="flex-container-dubble-item introduction-title">
+                    <p id="introduction-title">Portfolio</p>
+                </div>
+                <div class="flex-container-dubble-item introduction-title">
+                    <p id="introduction-title">Template</p>
+                </div>
+                <div class="flex-container-dubble-item introduction-title">
+                    <p id="introduction-title">Template</p>
+                </div>
 
+                <!--                files       -->
                 <h4>File:</h4>
                 <div class="flex-container-dubble-item ">
                     <img src="svg/file-svgrepo-com.svg">
@@ -179,6 +190,21 @@
                     </div>
                 </div>
 
+                <div class="introduction-inner-item-block">
+                    <div class="introduction-inner-item-title"
+                         id="introduction-inner-item-title'">
+                        <h3>Template</h3>
+                    </div>
+                    <div class="introduction-inner-item-file">
+                        <span>
+                            Template
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+<!--            Template-->
+            <div class="introduction-inner-item">
                 <div class="introduction-inner-item-block">
                     <div class="introduction-inner-item-title"
                          id="introduction-inner-item-title'">

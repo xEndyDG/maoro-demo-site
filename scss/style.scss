@@ -28,7 +28,7 @@ html, * {
   box-sizing: border-box;
   p, *{
     color: white;
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
     font-size: 18px;
   }
 }
@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
   //font-family: 'VT323', monospace;
 }
+//css help classes
 .text-center {
   text-align: center;
 }
@@ -175,157 +176,6 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-.navigation {
-  transition: all 1s;
-  text-align: center;
-  //justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-
-  ul {
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    transition: 300ms ease-in-out;
-    position: fixed;
-    top: 0;
-    right: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 3rem;
-    margin: 0;; //2 cijfer waarde na de hex == transperantie
-    width: 100%;
-    z-index: 2;
-
-    a {
-      display: inline-block;
-      color: #008000;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      text-decoration: none;
-      //font-size: 1.5em;
-      overflow: hidden;
-    }
-
-    a:hover {
-      color: #111;
-      background: $darkgreen;
-      box-shadow: 30px 30px 50px $darkergreen;
-      //box-shadow: 10px 10px 10px $reder;
-
-    }
-
-    li { //before
-      padding: 1rem;
-      margin: 10px 0 10px 0;
-      transform: translateX(100%);
-      transition: 500ms ease-in-out;
-    }
-  }
-
-  .navigation-icon {
-    position: fixed;
-    right: 0;
-    top: 0;
-    padding: .5rem 1rem;
-    //background: black;
-    z-index: 50;
-
-    .menu-bar-container {
-      display: inline-block;
-      cursor: pointer;
-
-      .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: $cyan;
-        margin: 6px 0;
-        transition: 0.4s;
-      }
-    }
-  }
-}
-
-.navigation--active {
-  ul {
-    height: 350px;
-    visibility: visible;
-    list-style-type: none;
-
-    a {
-      //padding: 20px 20px;
-      display: inline-block;
-      color: #008000;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      text-decoration: none;
-      //font-size: 1.5em;
-      overflow: hidden;
-    }
-
-    //a.active {
-    //  background: $darkergreen;
-    //}
-
-    a:hover {
-      color: #111;
-      background: $darkgreen;
-      box-shadow: 30px 30px 50px $darkergreen;
-      //box-shadow: 10px 10px 10px $reder;
-    }
-
-    li.stagger {
-      transform: translateX(100%);
-      transition: 500ms ease-in-out;
-    }
-
-    li.stagger--active {
-      transform: translateX(0);
-
-      a {
-        padding: 20px 20px;
-        display: inline-block;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        text-decoration: none;
-        //font-size: 3em;
-        overflow: hidden;
-        color: #111;
-        background: $darkgreen;
-        box-shadow: 0 0 50px $darkgreen;
-
-      }
-
-      a:hover {
-        color: #111;
-        background: $darkgreen;
-        box-shadow: 30px 30px 50px $darkergreen;
-        //box-shadow: 10px 10px 10px $reder;
-      }
-    }
-  }
-
-  .navigation-icon {
-    .menu-bar-container {
-      .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
-      }
-
-      .bar2 {
-        opacity: 0;
-      }
-
-      .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
-      }
-    }
-  }
-}
-
 .flex-container-dubble-item {
   display: flex;
   flex-wrap: nowrap;
@@ -438,12 +288,15 @@ section.introduction {
           list-style-type: none;
 
           li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             width: 100%;
             color: #FFF;
             border: 2px solid $red;
             border-radius: 0;
             padding: 1.5rem;
-            display: inline-block;
             font-family: "Lucida Console", Monaco, monospace;
             font-size: 14px;
             letter-spacing: 1px;
@@ -455,8 +308,6 @@ section.introduction {
             transition: ease-out .5s;
             margin: 10px 0;
 
-            box-shadow: 10px 10px 0 0 gray;   //hier was je pik
-            
 
             &:hover {
               box-shadow: 10px 10px 5px $reder;
@@ -582,97 +433,19 @@ section.introduction {
   }
 }
 
-
-.home {
-  .home-container {
-    margin: 5rem;
-    position: relative;
-
-    .home-container-center {
-      display: flex;
-      justify-self: center;
-      justify-content: center;
-      margin-top: 20%;
-      min-height: 500px;
-      min-width: 100%;
-      gap: 2.5rem;
-
-      a {
-        text-decoration: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      .home-container-info-content {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 1rem;
-
-
-        .home-container-info-content-part-1 {
-          flex-basis: 25%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-
-          .tiny-text {
-            margin: 0;
-            text-transform: uppercase;
-            font-size: 10px;
-          }
-
-          button {
-            padding: 15px 25px;
-            font-size: 18px;
-            //margin: 20px;
-            text-transform: uppercase;
-            background: transparent;
-            outline: none;
-            cursor: pointer;
-            border: 2px solid transparent;
-            transition: 330ms ease-in-out;
-            color: $red;
-          }
-
-          button:hover {
-            border: 2px solid;
-            box-shadow: 0 0 10px;
-          }
-
-          button:focus {
-            color: $reder;
-            border: 2px solid $red;
-            background: $red;
-            box-shadow: 0 0 20px $red;
-          }
-        }
-
-        .home-container-info-content-part-2 {
-          //background: darkgray;
-          flex-basis: 70%;
-          width: 65%;
-          align-self: center;
-        }
-      }
-
-      .home-container-info-content:first-child {
-        //background: $darkgreen;
-        flex-basis: 35%;
-      }
-
-      .home-container-info-content:nth-child(2) {
-        //background: $orange;
-        flex-basis: 25%;
-      }
-
-      .home-container-info-content:last-child {
-        //background: $reder;
-        flex-basis: 35%;
-      }
-    }
+@media screen and (max-width: 500px) {
+  html, body {
+    background-color: lightgreen;
+  }
+}
+@media screen and (max-width: 750px) {
+  html, body {
+    background-color: lightgray;
+  }
+}
+@media screen and (max-width: 900px) {
+  html, body {
+    background-color: darkolivegreen;
   }
 }
 
