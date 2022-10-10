@@ -1,29 +1,19 @@
-//run 'npm run scss' && press ctr + s voor npm --watch
-//idee, hover here en dan opent een box zich waar de img met text schuin uit komen met een fade in
+//define fonts
+@font-face {
+  font-family: 'Silkscreen';
+  src: url("../fonts/Silkscreen-Regular.ttf");
+}
 
+//global styling
+html, body {
+  background: #000000;
+  font-family: 'Silkscreen', sans-serif;
 
-//Colors
-$background: #fefefe;
-$text: #4b507a;
-
-$cyan: #60daaa;
-$darkgreen: #1c352d;
-$darkergreen: #13251f;
-$yellow: #fbca67;
-$orange: #ff8a30;
-//$red: #f45e61;
-$red: #900a0d;
-$reder: #bd484a;
-$purple: #6477b9;
-$blue: #0eb7da;
-
-
-html, * {
-  box-sizing: border-box;
-  p, *{
-    color: white;
-    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
-    font-size: 18px;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+  h1, h2, h4 {
+    color: #D40000;
   }
 }
 
@@ -31,21 +21,41 @@ html, * {
   width: 0;
   background: transparent;
   -webkit-appearance: none;
-  //optional:just make scrollbar invisible /
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  background: black;
+//animations
+//fade
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.animation-fade {
+  animation: fade 4s infinite;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin-top: 0;
-  //font-family: 'VT323', monospace;
+.home {
+  width: 100vw;
+  .home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+
+    &:last-child {
+      align-self: flex-end;
+      color: #01756D;
+    }
+    h1 {
+      font-size: 88px;
+    }
+  }
 }
-
-
-
-
-

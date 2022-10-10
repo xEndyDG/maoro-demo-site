@@ -1,3 +1,9 @@
-# project-dg-demo-site
+# dg-site
+Project dg website
 
-<h1>Coderen is moeilijk</h1>
+
+
+
+Notes:
+
+sass --watch scss/style.scss:css/style.css

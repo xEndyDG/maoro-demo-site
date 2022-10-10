@@ -1,19 +1,55 @@
-html, * {
-  box-sizing: border-box; }
-  html p, html *, * p, * * {
-    color: white;
-    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
-    font-size: 18px; }
+@font-face {
+  font-family: "Silkscreen";
+  src: url("../fonts/Silkscreen-Regular.ttf");
+}
+html, body {
+  background: #000000;
+  font-family: "Silkscreen", sans-serif;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+}
+html h1, html h2, html h4, body h1, body h2, body h4 {
+  color: #D40000;
+}
 
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
-html, body {
-  margin: 0;
-  padding: 0;
-  background: black; }
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.animation-fade {
+  animation: fade 4s infinite;
+}
 
-h1, h2, h3, h4, h5, h6, p {
-  margin-top: 0; }
+.home {
+  width: 100vw;
+}
+.home .home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.home .home-content:last-child {
+  align-self: flex-end;
+  color: #01756D;
+}
+.home .home-content h1 {
+  font-size: 88px;
+}
+
+/*# sourceMappingURL=style.css.map */
