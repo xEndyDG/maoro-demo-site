@@ -1,14 +1,14 @@
 <?php
-session_start();    //zet sessie in alle pagina's
+session_start();    //zet sessie in alle includes
 if (isset($_GET["page"])) { //als de GET 'page' niet leeg is
-    if ($_GET['page'] == 'logout') {    //als de GET 'page' gelijk is aan uitloggen
-        header('Location: php/logout.php'); //ga naar
-        exit();
-    } else {    //anders ga naar $page
+    $page = $_GET['page'];
+    if (file_exists("includes/$page.inc.php")) { //check if file exists in dir
         $page = $_GET['page'];
+    } else {
+        $page = '404';
     }
 } else {    //anders ga naar home
-    $page = 'home';
+    $page = 'start';
 }
 ?>
 
@@ -16,16 +16,19 @@ if (isset($_GET["page"])) { //als de GET 'page' niet leeg is
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title><?= $page ?></title>
     <!--    link naar stylesheet-->
     <link rel="stylesheet" href="css/style.css">
     <!--    link naar javascript-->
 </head>
-
-
 <body>
 <div class="container">
-        <?php include "includes/$page.inc.php"; ?>
+    <?php
+    if ($page != '404' && $page != 'start') {
+        include "includes/navigation.inc.php";
+    }
+    include "includes/$page.inc.php";
+    ?>
 </div>
 </body>
 </html>

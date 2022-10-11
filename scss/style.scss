@@ -15,12 +15,19 @@ html, body {
   h1, h2, h4 {
     color: #D40000;
   }
+  p, * {
+    color: #FFFFFF;
+  }
 }
 
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;
   -webkit-appearance: none;
+}
+.container {
+  display: flex;
+  padding: 3rem 1.5rem 3rem 1.5rem;
 }
 
 //animations
@@ -40,9 +47,81 @@ html, body {
   animation: fade 4s infinite;
 }
 
-.home {
+//404 page
+section.section-404 {
   width: 100vw;
-  .home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//navigation
+section.section-navigation {
+  width: 15vw;
+  .content-navigation {
+    padding: 0 20px;
+    .navigation-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      border: solid #D40000;
+      border-left: 3px;
+      border-right: 3px;
+      margin-bottom: 40px;
+
+      h3 {
+        font-size: 24px;
+      }
+    }
+
+    .navigation-content {
+      .navigation-content-item {
+        border: solid #01756D;
+        border-right: 1px;
+        border-left: 1px;
+        border-top: 1px;
+        margin: 2rem 0;
+
+        opacity: .5;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        p {
+          margin: 0;
+          color: #FFFFFF;
+          font-size: 18px;
+        }
+        a {
+          text-decoration: none;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .active-nav-item {
+        opacity: 1;
+      }
+
+    }
+  }
+
+
+}
+
+//start screen
+section.section-start {
+  width: 100vw;
+  a {
+    text-decoration: none;
+    cursor: default;
+  }
+  .content-start {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,10 +131,35 @@ html, body {
 
     &:last-child {
       align-self: flex-end;
-      color: #01756D;
+      i {
+        color: #01756D !important;
+      }
     }
     h1 {
       font-size: 88px;
     }
   }
 }
+
+//home / file page
+section.section-home {
+  width: 80vw;
+
+  .home-title {
+    border: 0.5px solid #D40000;
+    height: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .box {
+      padding: 0;
+      margin: 0;
+      border: 0.5px solid #D40000;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+

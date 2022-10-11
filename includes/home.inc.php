@@ -1,11 +1,30 @@
-<section class="home">
-    <div class="home-content container">
-        <h1 class="title">Maoro flores</h1>
-        <p class="animation-fade">
-            <i>
-                press anywhere to start.
-            </i>
-        </p>
-    </div>
+<section class="section-home">
+    <form action="index.php?page=home">
+        <div class="home-content">
+            <div class="home-title">
+                <div class="box"></div>
+                <h1 class="title">
+                    /<?= $page ?>
+                </h1>
+                <div class="box"></div>
+            </div>
+            <div class="home-body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusantium autem corporis dicta dolor ea
+                    iusto nihil omnis repellendus saepe suscipit ullam,
+                    veniam voluptatibus! A accusamus cumque dolorem hic
+                    libero suscipit?
+                </p>
+            </div>
+        </div>
+    </form>
+
 </section>
-<link href="javascript/home.js">
+<script>
+    document.getElementById("home-content").addEventListener("click", pressPlay);
+
+    function pressPlay() {
+        console.log('test');
+    }
+</script>
