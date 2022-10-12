@@ -1,13 +1,19 @@
 <?php
 
 $menuitems = [
-    'home' => 'home',
-    'introduction' => 'Introduction',
-    'about-me' => 'About me',
-    'portfolio' => 'Portfolio',
-    'activity' => 'Activity'
-
-]
+    ['home', 'home'],
+    ['introduction', 'Introduction'],
+    ['about_me', 'About_me'],
+    ['portfolio', 'Portfolio'],
+    ['activity', 'Activity']
+];
+$file = "json/navigation.json";
+$json = json_decode(file_get_contents($file), true);
+//json first key is iteration
+//second key is key
+//third key (children only) iteration of children
+//var_dump($json);
+//die();
 
 ?>
 
@@ -18,27 +24,25 @@ $menuitems = [
         </div>
         <div class="navigation-content">
             <?php
-            foreach ($menuitems as $menuitem) {
-
-            if ($menuitem === $page){
-            ?>
-            <div class="navigation-content-item active-nav-item">
-
-                <?php
-                } else {
-                ?>
-                <div class="navigation-content-item">
-                    <?php
+            foreach ($json as $item) {
+                echo '<div class="navigation-content-item">';
+                echo '<a href="index.php?page=' . $item['url'] . '"> ' . $item['label'] . ' </a>';
+                echo '</div>';
+                if ($item['url'] === $page) {
+                    echo '<ul>';
+                    if (array_key_exists('children', $item)) {
+                        foreach ($item["children"] as $child) {
+                            echo '<div class="nav-child-item">';
+                            echo '<li>';
+                            echo $child['label'];
+                            echo '</li>';
+                            echo '</div>';
+                        }
                     }
-                    ?>
-                    <a href="index.php?page=<?= $menuitem?>">
-                        <p>
-                            /<?= $menuitem ?>
-                        </p>
-                    </a>
-                </div>
-                <?php } ?>
-
-            </div>
+                    echo '</ul>';
+                }
+            }
+            ?>
         </div>
+    </div>
 </section>

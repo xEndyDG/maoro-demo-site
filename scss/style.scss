@@ -12,7 +12,7 @@ html, body {
   margin: 0;
   padding: 0;
   scrollbar-width: none;
-  h1, h2, h4 {
+  h1, h2 {
     color: #D40000;
   }
   p, * {
@@ -78,6 +78,7 @@ section.section-navigation {
     }
 
     .navigation-content {
+      position: relative;
       .navigation-content-item {
         border: solid #01756D;
         border-right: 1px;
@@ -104,6 +105,15 @@ section.section-navigation {
           opacity: 1;
         }
       }
+
+      .nav-child-item {
+
+      }
+
+      .nav-child-item-active {
+        color: #D40000;
+      }
+
       .active-nav-item {
         opacity: 1;
       }
@@ -144,7 +154,6 @@ section.section-start {
 //home / file page
 section.section-home {
   width: 80vw;
-
   .home-title {
     border: 0.5px solid #D40000;
     height: 2rem;
@@ -161,5 +170,105 @@ section.section-home {
       height: 2rem;
     }
   }
+
+  .home-body {
+    border: 1px solid #D40000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .home-body-content {
+      padding: 5rem;
+      min-height: 400px;
+    }
+    .home-body-footer {
+      p {
+        font-size: 30px;
+      }
+    }
+  }
 }
 
+section.section-template {
+  width: 80vw;
+  .template-title {
+    border: 0.5px solid #D40000;
+    height: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .box {
+      padding: 0;
+      margin: 0;
+      border: 0.5px solid #D40000;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .template-body {
+    border: 1px solid #D40000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .template-body-content {
+      padding: 5rem;
+      min-height: 400px;
+    }
+    .template-body-footer {
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+section.section-about-me {
+  width: 80vw;
+  .about-me-title {
+    border: 0.5px solid #D40000;
+    height: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .box {
+      padding: 0;
+      margin: 0;
+      border: 0.5px solid #D40000;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .about-me-body {
+    border: 1px solid #D40000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .about-me-body-navigation {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+
+      border: 0 solid #D40000;
+      border-top: 5px;
+
+    }
+
+    .about-me-body-content {
+      padding: 5rem;
+      min-height: 400px;
+
+    }
+    .about-me-body-footer {
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+}

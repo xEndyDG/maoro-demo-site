@@ -9,7 +9,7 @@ html, body {
   padding: 0;
   scrollbar-width: none;
 }
-html h1, html h2, html h4, body h1, body h2, body h4 {
+html h1, html h2, body h1, body h2 {
   color: #D40000;
 }
 html p, html *, body p, body * {
@@ -70,6 +70,9 @@ section.section-navigation .content-navigation .navigation-title {
 section.section-navigation .content-navigation .navigation-title h3 {
   font-size: 24px;
 }
+section.section-navigation .content-navigation .navigation-content {
+  position: relative;
+}
 section.section-navigation .content-navigation .navigation-content .navigation-content-item {
   border: solid #01756D;
   border-right: 1px;
@@ -91,6 +94,9 @@ section.section-navigation .content-navigation .navigation-content .navigation-c
 }
 section.section-navigation .content-navigation .navigation-content .navigation-content-item:hover {
   opacity: 1;
+}
+section.section-navigation .content-navigation .navigation-content .nav-child-item-active {
+  color: #D40000;
 }
 section.section-navigation .content-navigation .navigation-content .active-nav-item {
   opacity: 1;
@@ -136,6 +142,88 @@ section.section-home .home-title .box {
   border: 0.5px solid #D40000;
   width: 2rem;
   height: 2rem;
+}
+section.section-home .home-body {
+  border: 1px solid #D40000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.section-home .home-body .home-body-content {
+  padding: 5rem;
+  min-height: 400px;
+}
+section.section-home .home-body .home-body-footer p {
+  font-size: 30px;
+}
+
+section.section-template {
+  width: 80vw;
+}
+section.section-template .template-title {
+  border: 0.5px solid #D40000;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.section-template .template-title .box {
+  padding: 0;
+  margin: 0;
+  border: 0.5px solid #D40000;
+  width: 2rem;
+  height: 2rem;
+}
+section.section-template .template-body {
+  border: 1px solid #D40000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.section-template .template-body .template-body-content {
+  padding: 5rem;
+  min-height: 400px;
+}
+section.section-template .template-body .template-body-footer p {
+  font-size: 30px;
+}
+
+section.section-about-me {
+  width: 80vw;
+}
+section.section-about-me .about-me-title {
+  border: 0.5px solid #D40000;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.section-about-me .about-me-title .box {
+  padding: 0;
+  margin: 0;
+  border: 0.5px solid #D40000;
+  width: 2rem;
+  height: 2rem;
+}
+section.section-about-me .about-me-body {
+  border: 1px solid #D40000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.section-about-me .about-me-body .about-me-body-navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 0 solid #D40000;
+  border-top: 5px;
+}
+section.section-about-me .about-me-body .about-me-body-content {
+  padding: 5rem;
+  min-height: 400px;
+}
+section.section-about-me .about-me-body .about-me-body-footer p {
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
