@@ -1,3 +1,13 @@
+<?php
+$file = "json/navigation.json";
+$json = json_decode(file_get_contents($file), true);
+//var_dump($json);
+//var_dump($json[0]['']);
+//var_dump($json['about_me']['children']);
+//array_search('#about_me', $json['about_me']);
+//die('end of code');
+?>
+
 <section class="section-about-me">
     <div class="about-me-content">
         <div class="about-me-title">
@@ -12,11 +22,9 @@
                 coding is fun lol.
             </div>
             <div class="about-me-body-footer">
-                <p>
-                    <i>
-                        "Dummy text for now"
-                    </i>
-                </p>
+                <div id="">
+
+                </div>
             </div>
         </div>
     </div>

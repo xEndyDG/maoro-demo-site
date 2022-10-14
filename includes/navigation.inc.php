@@ -1,12 +1,4 @@
 <?php
-
-$menuitems = [
-    ['home', 'home'],
-    ['introduction', 'Introduction'],
-    ['about_me', 'About_me'],
-    ['portfolio', 'Portfolio'],
-    ['activity', 'Activity']
-];
 $file = "json/navigation.json";
 $json = json_decode(file_get_contents($file), true);
 //json first key is iteration
@@ -14,7 +6,6 @@ $json = json_decode(file_get_contents($file), true);
 //third key (children only) iteration of children
 //var_dump($json);
 //die();
-
 ?>
 
 <section class="section-navigation">
@@ -25,7 +16,12 @@ $json = json_decode(file_get_contents($file), true);
         <div class="navigation-content">
             <?php
             foreach ($json as $item) {
-                echo '<div class="navigation-content-item">';
+                if ($item['url'] === $page) {
+                    echo '<div class="navigation-content-item active">';
+                } else {
+                    echo '<div class="navigation-content-item">';
+
+                }
                 echo '<a href="index.php?page=' . $item['url'] . '"> ' . $item['label'] . ' </a>';
                 echo '</div>';
                 if ($item['url'] === $page) {
@@ -34,7 +30,8 @@ $json = json_decode(file_get_contents($file), true);
                         foreach ($item["children"] as $child) {
                             echo '<div class="nav-child-item">';
                             echo '<li>';
-                            echo $child['label'];
+                            echo '- ';
+                            echo  '<div class="nav-child-item-label"><a href="' . $child['url'] .'">' . $child['label'] . '</a></div>';
                             echo '</li>';
                             echo '</div>';
                         }
@@ -46,3 +43,17 @@ $json = json_decode(file_get_contents($file), true);
         </div>
     </div>
 </section>
+<script>
+
+    const items = Array.from(document.getElementsByClassName('nav-child-item-label'));
+
+    items.forEach(item => {
+        item.addEventListener('click', function handleClick(event) {
+            // console.log('box clicked', events;
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove('active-red')
+            }
+            item.classList.add('active-red')
+        });
+    });
+</script>

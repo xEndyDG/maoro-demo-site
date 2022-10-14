@@ -95,8 +95,27 @@ section.section-navigation .content-navigation .navigation-content .navigation-c
 section.section-navigation .content-navigation .navigation-content .navigation-content-item:hover {
   opacity: 1;
 }
-section.section-navigation .content-navigation .navigation-content .nav-child-item-active {
+section.section-navigation .content-navigation .navigation-content .active {
+  opacity: 1;
+}
+section.section-navigation .content-navigation .navigation-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section.section-navigation .content-navigation .navigation-content li {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+section.section-navigation .content-navigation .navigation-content .nav-child-item-label a {
+  text-decoration: none;
+}
+section.section-navigation .content-navigation .navigation-content .nav-child-item-label a:hover {
   color: #D40000;
+}
+section.section-navigation .content-navigation .navigation-content .active-red p, section.section-navigation .content-navigation .navigation-content .active-red * {
+  color: #D40000 !important;
 }
 section.section-navigation .content-navigation .navigation-content .active-nav-item {
   opacity: 1;

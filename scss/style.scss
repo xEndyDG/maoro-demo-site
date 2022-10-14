@@ -106,12 +106,37 @@ section.section-navigation {
         }
       }
 
-      .nav-child-item {
-
+      .active {
+        opacity: 1;
       }
 
-      .nav-child-item-active {
-        color: #D40000;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+      }
+      ul, li::before {
+        //content: '- ';
+      }
+
+      .nav-child-item-label {
+        a {
+          text-decoration: none;
+
+          &:hover {
+            color: #D40000;
+          }
+        }
+      }
+      .active-red {
+        p, * {
+          color: #D40000 !important;
+        }
       }
 
       .active-nav-item {
