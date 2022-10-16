@@ -27,6 +27,37 @@ html p, html *, body p, body * {
   padding: 3rem 1.5rem 3rem 1.5rem;
 }
 
+.box {
+  padding: 0;
+  margin: 0;
+  border: 0.5px solid #D40000;
+  width: 2rem;
+  height: 2rem;
+}
+
+.center-div-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-red {
+  filter: brightness(0) saturate(100%) invert(16%) sepia(92%) saturate(3473%) hue-rotate(353deg) brightness(87%) contrast(119%);
+}
+
+.flip-180 {
+  -webkit-transform: rotateX(180deg);
+  transform: rotatey(180deg);
+}
+
+.show-hide-click-on-id {
+  display: none;
+}
+.show-hide-click-on-id:target {
+  display: flex;
+  flex-basis: 100%;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -155,13 +186,6 @@ section.section-home .home-title {
   align-items: center;
   justify-content: space-between;
 }
-section.section-home .home-title .box {
-  padding: 0;
-  margin: 0;
-  border: 0.5px solid #D40000;
-  width: 2rem;
-  height: 2rem;
-}
 section.section-home .home-body {
   border: 1px solid #D40000;
   display: flex;
@@ -185,13 +209,6 @@ section.section-template .template-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-section.section-template .template-title .box {
-  padding: 0;
-  margin: 0;
-  border: 0.5px solid #D40000;
-  width: 2rem;
-  height: 2rem;
 }
 section.section-template .template-body {
   border: 1px solid #D40000;
@@ -217,29 +234,97 @@ section.section-about-me .about-me-title {
   align-items: center;
   justify-content: space-between;
 }
-section.section-about-me .about-me-title .box {
-  padding: 0;
-  margin: 0;
-  border: 0.5px solid #D40000;
-  width: 2rem;
-  height: 2rem;
-}
 section.section-about-me .about-me-body {
   border: 1px solid #D40000;
   display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+}
+section.section-about-me .about-me-body .about-me-body-content {
+  padding: 2.5rem 2.5rem;
+  min-height: 400px;
+  display: flex;
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+section.section-about-me .about-me-body .about-me-body-content p, section.section-about-me .about-me-body .about-me-body-content h2, section.section-about-me .about-me-body .about-me-body-content h3 {
+  color: #FFFFFF;
+}
+section.section-about-me .about-me-body .about-me-body-content img {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #D40000;
+}
+section.section-about-me .about-me-body .about-me-body-content #who_am_I {
+  display: none;
+}
+section.section-about-me .about-me-body .about-me-body-content #who_am_I:target {
+  display: flex;
+  flex-basis: 100%;
+}
+section.section-about-me .about-me-body .about-me-body-content #who_am_I:target ul {
+  text-decoration: none;
+  list-style: none;
+}
+section.section-about-me .about-me-body .about-me-body-content #who_am_I:target ul li {
+  text-decoration: none;
+}
+section.section-about-me .about-me-body .about-me-body-content #who_am_I:target .p-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+section.section-about-me .about-me-body .about-me-body-content #what_do_I_do {
+  display: none;
+}
+section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:target {
+  display: flex;
+  flex-basis: 100%;
   flex-direction: column;
   align-items: center;
 }
-section.section-about-me .about-me-body .about-me-body-navigation {
-  width: 100%;
+section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:target .what_do_I_do_menu {
+  display: flex;
+  align-items: center;
+}
+section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:target .what_do_I_do_menu img {
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:target .what_do_I_do_menu .box {
+  width: 200px;
+  height: 200px;
+}
+section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:target .what_do_I_do_menu .box img {
+  width: 100px;
+  height: 100px;
+}
+section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:target .what_do_I_do_menu .menu-arrow {
+  padding: 0;
+  margin: 0 1.5rem;
+  border: 0.5px solid #D40000;
+  width: 40px;
+  height: 60px;
+}
+section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:target .what_do_I_do_content {
+  text-align: center;
+}
+section.section-about-me .about-me-body .about-me-body-content #why_do_I_do {
+  flex-direction: column;
+}
+section.section-about-me .about-me-body .about-me-body-content #why_do_I_do .why_do_I_do_menu {
   display: flex;
   justify-content: space-between;
-  border: 0 solid #D40000;
-  border-top: 5px;
 }
-section.section-about-me .about-me-body .about-me-body-content {
-  padding: 5rem;
-  min-height: 400px;
+section.section-about-me .about-me-body .about-me-body-content #why_do_I_do .why_do_I_do_menu img {
+  height: 175px;
+  width: 175px;
+}
+section.section-about-me .about-me-body .about-me-body-footer {
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }
 section.section-about-me .about-me-body .about-me-body-footer p {
   font-size: 30px;

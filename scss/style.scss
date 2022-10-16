@@ -12,9 +12,11 @@ html, body {
   margin: 0;
   padding: 0;
   scrollbar-width: none;
+
   h1, h2 {
     color: #D40000;
   }
+
   p, * {
     color: #FFFFFF;
   }
@@ -25,10 +27,42 @@ html, body {
   background: transparent;
   -webkit-appearance: none;
 }
+
 .container {
   display: flex;
   padding: 3rem 1.5rem 3rem 1.5rem;
 }
+
+.box {
+  padding: 0;
+  margin: 0;
+  border: 0.5px solid #D40000;
+  width: 2rem;
+  height: 2rem;
+}
+
+.center-div-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-red {
+  filter: brightness(0) saturate(100%) invert(16%) sepia(92%) saturate(3473%) hue-rotate(353deg) brightness(87%) contrast(119%);
+}
+.flip-180 {
+  -webkit-transform: rotateX(180deg);
+  transform: rotatey(180deg);
+}
+//onclick show
+.show-hide-click-on-id {
+  display: none;
+
+  &:target {
+    display: flex;
+    flex-basis: 100%;
+  }
+}
+
 
 //animations
 //fade
@@ -43,6 +77,7 @@ html, body {
     opacity: 0;
   }
 }
+
 .animation-fade {
   animation: fade 4s infinite;
 }
@@ -58,8 +93,10 @@ section.section-404 {
 //navigation
 section.section-navigation {
   width: 15vw;
+
   .content-navigation {
     padding: 0 20px;
+
     .navigation-title {
       display: flex;
       flex-direction: column;
@@ -79,6 +116,7 @@ section.section-navigation {
 
     .navigation-content {
       position: relative;
+
       .navigation-content-item {
         border: solid #01756D;
         border-right: 1px;
@@ -97,6 +135,7 @@ section.section-navigation {
           color: #FFFFFF;
           font-size: 18px;
         }
+
         a {
           text-decoration: none;
         }
@@ -115,11 +154,13 @@ section.section-navigation {
         margin: 0;
         padding: 0;
       }
+
       li {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: nowrap;
       }
+
       ul, li::before {
         //content: '- ';
       }
@@ -133,6 +174,7 @@ section.section-navigation {
           }
         }
       }
+
       .active-red {
         p, * {
           color: #D40000 !important;
@@ -152,10 +194,12 @@ section.section-navigation {
 //start screen
 section.section-start {
   width: 100vw;
+
   a {
     text-decoration: none;
     cursor: default;
   }
+
   .content-start {
     display: flex;
     justify-content: center;
@@ -166,10 +210,12 @@ section.section-start {
 
     &:last-child {
       align-self: flex-end;
+
       i {
         color: #01756D !important;
       }
     }
+
     h1 {
       font-size: 88px;
     }
@@ -179,6 +225,7 @@ section.section-start {
 //home / file page
 section.section-home {
   width: 80vw;
+
   .home-title {
     border: 0.5px solid #D40000;
     height: 2rem;
@@ -186,14 +233,6 @@ section.section-home {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    .box {
-      padding: 0;
-      margin: 0;
-      border: 0.5px solid #D40000;
-      width: 2rem;
-      height: 2rem;
-    }
   }
 
   .home-body {
@@ -201,10 +240,12 @@ section.section-home {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .home-body-content {
       padding: 5rem;
       min-height: 400px;
     }
+
     .home-body-footer {
       p {
         font-size: 30px;
@@ -215,6 +256,7 @@ section.section-home {
 
 section.section-template {
   width: 80vw;
+
   .template-title {
     border: 0.5px solid #D40000;
     height: 2rem;
@@ -222,14 +264,6 @@ section.section-template {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    .box {
-      padding: 0;
-      margin: 0;
-      border: 0.5px solid #D40000;
-      width: 2rem;
-      height: 2rem;
-    }
   }
 
   .template-body {
@@ -237,10 +271,12 @@ section.section-template {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .template-body-content {
       padding: 5rem;
       min-height: 400px;
     }
+
     .template-body-footer {
       p {
         font-size: 30px;
@@ -251,6 +287,7 @@ section.section-template {
 
 section.section-about-me {
   width: 80vw;
+
   .about-me-title {
     border: 0.5px solid #D40000;
     height: 2rem;
@@ -259,38 +296,123 @@ section.section-about-me {
     align-items: center;
     justify-content: space-between;
 
-    .box {
-      padding: 0;
-      margin: 0;
-      border: 0.5px solid #D40000;
-      width: 2rem;
-      height: 2rem;
-    }
+
   }
 
   .about-me-body {
     border: 1px solid #D40000;
     display: flex;
+    flex-basis: 100%;
     flex-direction: column;
-    align-items: center;
-
-    .about-me-body-navigation {
-      width: 100%;
-
-      display: flex;
-      justify-content: space-between;
-
-      border: 0 solid #D40000;
-      border-top: 5px;
-
-    }
 
     .about-me-body-content {
-      padding: 5rem;
+      padding: 2.5rem 2.5rem;
       min-height: 400px;
 
+      display: flex;
+      flex-basis: 100%;
+      flex-grow: 1;
+
+      p, h2, h3 {
+        color: #FFFFFF;
+      }
+
+      img {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #D40000;
+      }
+
+
+      #who_am_I {
+        display: none;
+
+        &:target {
+          display: flex;
+          flex-basis: 100%;
+
+          ul {
+            text-decoration: none;
+            list-style: none;
+
+            li {
+              text-decoration: none;
+            }
+          }
+
+          .p-list {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+          }
+        }
+      }
+
+      #what_do_I_do {
+        display: none;;
+
+        &:target {
+          display: flex;
+          flex-basis: 100%;
+          flex-direction: column;
+          align-items: center;
+          //justify-content: space-evenly;
+
+
+          .what_do_I_do_menu {
+            display: flex;
+            align-items: center;
+            img {
+              width: 20px;
+              height: 20px;
+              border: none;
+            }
+
+            .box {
+              width: 200px;
+              height: 200px;
+              img {
+                width: 100px;
+                height: 100px;
+              }
+            }
+
+            .menu-arrow {
+              padding: 0;
+              margin: 0 1.5rem;
+              border: 0.5px solid #D40000;
+              width: 40px;
+              height: 60px;
+            }
+          }
+
+          .what_do_I_do_content {
+            text-align: center;
+          }
+        }
+      }
+
+      #why_do_I_do {
+        flex-direction: column;
+
+        .why_do_I_do_menu {
+          display: flex;
+          justify-content: space-between;
+          img {
+            height: 175px;
+            width: 175px;
+          }
+        }
+      }
+
     }
+
     .about-me-body-footer {
+      display: flex;
+      justify-content: center;
+
+      flex: 1;
+
       p {
         font-size: 30px;
       }
