@@ -22,7 +22,7 @@ $json = json_decode(file_get_contents($file), true);
                     echo '<div class="navigation-content-item">';
 
                 }
-                echo '<a href="index.php?page=' . $item['url'] . '"> ' . $item['label'] . ' </a>';
+                echo '<a href="index.php?page=' . $item['url'] . '">/' . $item['label'] . ' </a>';
                 echo '</div>';
                 if ($item['url'] === $page) {
                     echo '<ul>';
@@ -44,12 +44,12 @@ $json = json_decode(file_get_contents($file), true);
     </div>
 </section>
 <script>
-
+    if (location.hash){
+        document.querySelector('a[href="#' + location.hash.replace(/^#/, "") + '"]').parentElement.classList.add('active-red');
+    }
     const items = Array.from(document.getElementsByClassName('nav-child-item-label'));
-
     items.forEach(item => {
         item.addEventListener('click', function handleClick(event) {
-            // console.log('box clicked', events;
             for (let i = 0; i < items.length; i++) {
                 items[i].classList.remove('active-red')
             }

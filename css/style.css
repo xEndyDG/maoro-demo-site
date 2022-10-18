@@ -143,7 +143,7 @@ section.section-navigation .content-navigation .navigation-content .nav-child-it
   text-decoration: none;
 }
 section.section-navigation .content-navigation .navigation-content .nav-child-item-label a:hover {
-  color: #D40000;
+  color: #d34141;
 }
 section.section-navigation .content-navigation .navigation-content .active-red p, section.section-navigation .content-navigation .navigation-content .active-red * {
   color: #D40000 !important;
@@ -307,8 +307,23 @@ section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:tar
   width: 40px;
   height: 60px;
 }
+section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:target .what_do_I_do_menu .menu-arrow:hover {
+  cursor: pointer;
+}
+section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:target .what_do_I_do_menu .menu-icon {
+  display: none;
+}
+section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:target .what_do_I_do_menu .active {
+  display: flex;
+}
 section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:target .what_do_I_do_content {
   text-align: center;
+}
+section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:target .what_do_I_do_content .menu-content-item {
+  display: none;
+}
+section.section-about-me .about-me-body .about-me-body-content #what_do_I_do:target .what_do_I_do_content .active {
+  display: flex;
 }
 section.section-about-me .about-me-body .about-me-body-content #why_do_I_do {
   flex-direction: column;
@@ -317,9 +332,30 @@ section.section-about-me .about-me-body .about-me-body-content #why_do_I_do .why
   display: flex;
   justify-content: space-between;
 }
-section.section-about-me .about-me-body .about-me-body-content #why_do_I_do .why_do_I_do_menu img {
-  height: 175px;
-  width: 175px;
+section.section-about-me .about-me-body .about-me-body-content #why_do_I_do .why_do_I_do_menu .menu3-icon-container {
+  padding: 2rem;
+  border: 1px solid #D40000;
+  filter: invert(48%) sepia(10%) saturate(203%) hue-rotate(314deg) brightness(96%) contrast(87%);
+}
+section.section-about-me .about-me-body .about-me-body-content #why_do_I_do .why_do_I_do_menu .menu3-icon-container:hover {
+  filter: invert(40%) sepia(81%) saturate(5445%) hue-rotate(342deg) brightness(92%) contrast(78%);
+  cursor: pointer;
+}
+section.section-about-me .about-me-body .about-me-body-content #why_do_I_do .why_do_I_do_menu .menu3-icon-container img {
+  height: 75px;
+  width: 75px;
+  border: none;
+}
+section.section-about-me .about-me-body .about-me-body-content #why_do_I_do .why_do_I_do_menu .active {
+  filter: brightness(0) saturate(100%) invert(16%) sepia(92%) saturate(3473%) hue-rotate(353deg) brightness(87%) contrast(119%) !important;
+}
+section.section-about-me .about-me-body .about-me-body-content #why_do_I_do .why_do_I_do_content .menu3-item {
+  display: none;
+}
+section.section-about-me .about-me-body .about-me-body-content #why_do_I_do .why_do_I_do_content .active {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
 }
 section.section-about-me .about-me-body .about-me-body-footer {
   display: flex;
