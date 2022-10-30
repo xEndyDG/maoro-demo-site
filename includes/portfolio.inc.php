@@ -1,14 +1,14 @@
-<section class="section-template">
-    <div class="template-content">
-        <div class="template-title">
+<section class="base-section">
+    <div class="base-content">
+        <div class="base-title">
             <div class="box"></div>
             <h3>
                 /<?= $page ?>
             </h3>
             <div class="box"></div>
         </div>
-        <div class="template-body">
-            <div class="template-body-content">
+        <div class="base-body">
+            <div class="base-body-content">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Accusantium autem corporis dicta dolor ea
@@ -17,7 +17,7 @@
                     libero suscipit?
                 </p>
             </div>
-            <div class="template-body-footer">
+            <div class="base-body-footer">
                 <p>
                     <i>
                         "Dummy text for now"

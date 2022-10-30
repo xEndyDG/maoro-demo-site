@@ -61,6 +61,7 @@ html, body {
   -webkit-transform: rotateX(180deg);
   transform: rotatey(180deg);
 }
+
 //onclick show
 .show-hide-click-on-id {
   display: none;
@@ -74,8 +75,10 @@ html, body {
 //base template
 .base-section {
   width: 80vw;
+  border: 1px solid #D40000;
   .base-content {
     max-height: 100px;
+
     .base-title {
       border: 0.5px solid #D40000;
       height: 2rem;
@@ -101,6 +104,7 @@ html, body {
         flex-direction: column;
         justify-content: end;
         flex-basis: 100%;
+
         p, * {
           font-size: 24px;
           color: #01756D !important;
@@ -379,6 +383,7 @@ section.section-about-me {
           .what_do_I_do_menu {
             display: flex;
             align-items: center;
+
             img {
               width: 20px;
               height: 20px;
@@ -388,6 +393,7 @@ section.section-about-me {
             .box {
               width: 200px;
               height: 200px;
+
               img {
                 width: 100px;
                 height: 100px;
@@ -400,6 +406,7 @@ section.section-about-me {
               border: 0.5px solid #D40000;
               width: 40px;
               height: 60px;
+
               &:hover {
                 cursor: pointer;
               }
@@ -408,6 +415,7 @@ section.section-about-me {
             .menu-icon {
               display: none;
             }
+
             .active {
               display: flex;
             }
@@ -419,6 +427,7 @@ section.section-about-me {
             .menu-content-item {
               display: none;
             }
+
             .active {
               display: flex;
             }
@@ -442,20 +451,24 @@ section.section-about-me {
               filter: invert(40%) sepia(81%) saturate(5445%) hue-rotate(342deg) brightness(92%) contrast(78%);
               cursor: pointer;
             }
+
             img {
               height: 75px;
               width: 75px;
               border: none;
             }
           }
+
           .active {
             filter: brightness(0) saturate(100%) invert(16%) sepia(92%) saturate(3473%) hue-rotate(353deg) brightness(87%) contrast(119%) !important;
           }
         }
+
         .why_do_I_do_content {
           .menu3-item {
             display: none;
           }
+
           .active {
             display: flex;
             flex-basis: 100%;
