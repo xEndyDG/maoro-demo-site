@@ -44,9 +44,12 @@ $json = json_decode(file_get_contents($file), true);
     </div>
 </section>
 <script>
+    //add active class to link if in url
     if (location.hash){
         document.querySelector('a[href="#' + location.hash.replace(/^#/, "") + '"]').parentElement.classList.add('active-red');
     }
+
+    //add / remove active class onClick
     const items = Array.from(document.getElementsByClassName('nav-child-item-label'));
     items.forEach(item => {
         item.addEventListener('click', function handleClick(event) {

@@ -46,9 +46,17 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+
+.text-red {
+  color: #D40000 !important;
+}
+
+//make base color red of images
 .filter-red {
   filter: brightness(0) saturate(100%) invert(16%) sepia(92%) saturate(3473%) hue-rotate(353deg) brightness(87%) contrast(119%);
 }
+
+//flip something 180 deg
 .flip-180 {
   -webkit-transform: rotateX(180deg);
   transform: rotatey(180deg);
@@ -63,6 +71,45 @@ html, body {
   }
 }
 
+//base template
+.base-section {
+  width: 80vw;
+  .base-content {
+    max-height: 100px;
+    .base-title {
+      border: 0.5px solid #D40000;
+      height: 2rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .base-body {
+      border: 1px solid #D40000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 500px;
+
+      .base-body-content {
+        padding: 2.5rem;
+      }
+
+      .base-body-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        flex-basis: 100%;
+        p, * {
+          font-size: 24px;
+          color: #01756D !important;
+          margin: 0 0 15px 0;
+        }
+      }
+    }
+  }
+}
 
 //animations
 //fade
@@ -254,37 +301,7 @@ section.section-home {
   }
 }
 
-section.section-template {
-  width: 80vw;
-
-  .template-title {
-    border: 0.5px solid #D40000;
-    height: 2rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .template-body {
-    border: 1px solid #D40000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .template-body-content {
-      padding: 5rem;
-      min-height: 400px;
-    }
-
-    .template-body-footer {
-      p {
-        font-size: 30px;
-      }
-    }
-  }
-}
-
+//about me page
 section.section-about-me {
   width: 80vw;
 

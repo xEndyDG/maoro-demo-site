@@ -11,7 +11,6 @@ if (isset($_GET["page"])) { //als de GET 'page' niet leeg is
     $page = 'start';
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

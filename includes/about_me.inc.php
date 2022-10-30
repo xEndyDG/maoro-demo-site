@@ -2,9 +2,6 @@
 $file = "json/navigation.json";
 $json = json_decode(file_get_contents($file), true);
 $key = array_search($page, array_column($json, 'url'));
-//array_values($json[$key]['children'])
-//var_dump(array_values($json[$key]['children']));
-//die('<br>end of code<br>');
 ?>
 
 <section class="section-about-me">
@@ -133,7 +130,7 @@ $key = array_search($page, array_column($json, 'url'));
     </div>
 </section>
 <script>
-    //menu
+    //menu 1
     const menuButtons = document.getElementsByClassName('menu-arrow')
     const arrowLeft = menuButtons[0]
     const arrowRight = menuButtons[1]
@@ -166,7 +163,7 @@ $key = array_search($page, array_column($json, 'url'));
     const menuIcon3 = [...document.getElementsByClassName('menu3-icon-container')]
     const menuItems3 = [...document.getElementsByClassName('menu3-item')]
 
-
+    //remove and add active class
     menuIcon3.forEach(item => {
         item.addEventListener('click', function handleClick(event) {
             for (let i = 0; i < menuIcon3.length; i++) {
